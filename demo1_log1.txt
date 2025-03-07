@@ -1,0 +1,718 @@
+zxddebug enter transforms.cpp value_and_grad
+zxddebug enter transforms.cpp vjp
+zxddebug cotans:array(1, dtype=float32)
+zxddebug cotans:1
+zxddebug outputs:1
+zxddebug out:array(0.499393, dtype=float32)
+zxddebug out.shape:()
+zxddebug cotan_index:0
+zxddebug cotans.shape:()
+zxddebug tape.size:0
+zxddebug tape.size:17
+zxddebug Run the tape backwards
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.499393, dtype=float32)
+zxddebug vjps:
+array(1, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.499393, dtype=float32)
+zxddebug vjps:
+array(0.00223214, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core7SqueezeE
+zxddebug cotangents.size:1
+zxddebug a:array(223.728, dtype=float32)
+zxddebug vjps:
+array([0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6ReduceE
+zxddebug cotangents.size:1
+zxddebug a:array([[223.728]], dtype=float32)
+zxddebug vjps:
+array([0.00223214, 0.00223214, 0.00223214, ..., 0.00223214, 0.00223214, 0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6SquareE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.00578884, 0.0232035, 0.111766, ..., 0.999481, 0.974288, 0.676678]], dtype=float32)
+zxddebug vjps:
+array([0.000339663, 0.000680031, 0.00149247, ..., 0.00446313, 0.00440652, 0.00367234], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8SubtractE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0760844, 0.152327, 0.334314, ..., 0.999741, 0.98706, 0.822604]], dtype=float32)
+zxddebug vjps:
+array([0.000339663, 0.000680031, 0.00149247, ..., 0.00446313, 0.00440652, 0.00367234], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0727107, 0.143397, 0.335498, ..., 0.973637, 0.999107, 0.826166]], dtype=float32)
+zxddebug vjps:
+array([0.000339663, 0.000680031, 0.00149247, ..., 0.00331122, 0.00406282, 0.00434081], dtype=float32) 
+array([0.0018467, 0.000193922, 0.000606999, ..., 0.00446313, 0.00440652, 0.00367234], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.413976, 0.0431992, 0.112254, ..., 0.973637, 0.999107, 0.826166]], dtype=float32)
+zxddebug vjps:
+array([0.0018467, 0.000193922, 0.000606999, ..., -0.000920308, 0.000207838, -0.00252799], dtype=float32) 
+array([0.00406593, 0.00449883, 0.00441824, ..., 0.00446313, 0.00440652, 0.00367234], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.910288, 0.999066, 0.993679, ..., 0.973637, 0.999107, 0.826166]], dtype=float32)
+zxddebug vjps:
+array([-0.0016832, -0.000194346, -0.000495967, ..., 0.00101805, -0.000186186, 0.00206909], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.413976, 0.0431992, 0.112254, ..., -0.228102, 0.0422523, -0.563426]], dtype=float32)
+zxddebug vjps:
+array([0.00168103, 0.000193741, 0.000603162, ..., -0.000896047, 0.000207653, -0.00208854], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.426818, 0.0432126, 0.112492, ..., -0.230128, 0.0422649, -0.598527]], dtype=float32)
+zxddebug vjps:
+array([-1.5864e-06, -4.4273e-07, 7.84598e-05, ..., 8.92959e-05, 1.57123e-05, -1.42355e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.58314, 0.0590392, 0.153692, ..., -0.314412, 0.0577444, -0.817738]], dtype=float32)
+zxddebug vjps:
+array([-1.5864e-06], dtype=float32) array([-4.4273e-07], dtype=float32) array([7.84598e-05], dtype=float32) array([3.83872e-05], dtype=float32) array([5.7777e-05], dtype=float32) array([-7.38174e-06], dtype=float32) array([1.98836e-05], dtype=float32) array([2.90762e-05], dtype=float32) array([4.6675e-05], dtype=float32) array([2.22717e-05], dtype=float32) array([5.52028e-05], dtype=float32) array([2.06765e-05], dtype=float32) array([-6.17046e-05], dtype=float32) array([6.45655e-05], dtype=float32) array([-8.66991e-07], dtype=float32) array([1.44979e-05], dtype=float32) array([9.80096e-06], dtype=float32) array([-5.1907e-06], dtype=float32) array([-3.84541e-05], dtype=float32) array([8.96094e-06], dtype=float32) array([-5.73215e-05], dtype=float32) array([-1.56372e-05], dtype=float32) array([-9.34842e-06], dtype=float32) array([1.33531e-05], dtype=float32) array([2.51995e-05], dtype=float32) array([-7.90815e-06], dtype=float32) array([-2.33681e-05], dtype=float32) array([-3.34014e-05], dtype=float32) array([-5.33707e-05], dtype=float32) array([1.70676e-05], dtype=float32) array([-1.13364e-05], dtype=float32) array([-1.52198e-06], dtype=float32) array([1.11434e-05], dtype=float32) array([-3.67068e-05], dtype=float32) array([2.5318e-05], dtype=float32) array([4.14701e-05], dtype=float32) array([2.07284e-05], dtype=float32) array([6.0173e-06], dtype=float32) array([-3.25805e-05], dtype=float32) array([-9.94748e-06], dtype=float32) array([-1.44514e-05], dtype=float32) array([-8.06222e-05], dtype=float32) array([5.68744e-05], dtype=float32) array([-1.28298e-05], dtype=float32) array([-3.02056e-05], dtype=float32) array([-4.2955e-05], dtype=float32) array([5.61207e-05], dtype=float32) array([2.00239e-07], dtype=float32) array([2.86157e-05], dtype=float32) array([4.94214e-05], dtype=float32) array([2.75211e-05], dtype=float32) array([-1.94287e-05], dtype=float32) array([7.33947e-06], dtype=float32) array([-2.05844e-05], dtype=float32) array([-4.66804e-05], dtype=float32) array([-1.85818e-05], dtype=float32) array([1.17965e-05], dtype=float32) array([-4.57263e-05], dtype=float32) array([2.2388e-05], dtype=float32) array([-4.88821e-06], dtype=float32) array([2.80558e-05], dtype=float32) array([8.92959e-05], dtype=float32) array([1.57123e-05], dtype=float32) array([-1.42355e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0727107, 0.143397, 0.335498, ..., 0.754976, 0.925579, 0.968332]], dtype=float32)
+zxddebug vjps:
+array([0.000339663, 0.000680031, 0.00149247, ..., 0.0029009, 0.00168145, 0.00109974], dtype=float32) 
+array([0.00442254, 0.00441889, 0.00430917, ..., 0.00331122, 0.00406282, 0.00434081], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.997353, 0.989665, 0.942041, ..., 0.754976, 0.925579, 0.968332]], dtype=float32)
+zxddebug vjps:
+array([-0.000321566, -0.000633655, -0.00144571, ..., -0.00217134, -0.001538, -0.00108376], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0727107, 0.143397, 0.335498, ..., 0.655752, 0.378554, 0.249667]], dtype=float32)
+zxddebug vjps:
+array([0.000338764, 0.000673003, 0.00140597, ..., 0.00219011, 0.00155631, 0.00106492], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0727749, 0.143893, 0.342133, ..., 0.715178, 0.388234, 0.252337]], dtype=float32)
+zxddebug vjps:
+array([1.25874e-05, 2.88e-05, -2.90892e-05, ..., 1.37394e-05, 1.34066e-05, -1.37915e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0994287, 0.196594, 0.46744, ..., 0.977112, 0.530424, 0.344755]], dtype=float32)
+zxddebug vjps:
+array([1.25874e-05], dtype=float32) array([2.88e-05], dtype=float32) array([-2.90892e-05], dtype=float32) array([9.81647e-06], dtype=float32) array([1.25294e-05], dtype=float32) array([4.76817e-05], dtype=float32) array([-4.92643e-05], dtype=float32) array([-3.90851e-05], dtype=float32) array([4.30736e-05], dtype=float32) array([-2.4342e-05], dtype=float32) array([-2.73662e-06], dtype=float32) array([9.65681e-05], dtype=float32) array([-6.01824e-06], dtype=float32) array([-4.24501e-06], dtype=float32) array([-8.82021e-05], dtype=float32) array([-1.78058e-05], dtype=float32) array([2.33724e-05], dtype=float32) array([7.67988e-06], dtype=float32) array([-4.50643e-05], dtype=float32) array([-6.26913e-05], dtype=float32) array([-4.46098e-06], dtype=float32) array([-1.99756e-06], dtype=float32) array([4.29477e-05], dtype=float32) array([4.42236e-05], dtype=float32) array([5.18443e-05], dtype=float32) array([6.37074e-06], dtype=float32) array([2.37737e-05], dtype=float32) array([-2.49543e-05], dtype=float32) array([-3.57243e-06], dtype=float32) array([-8.19803e-06], dtype=float32) array([-5.06139e-05], dtype=float32) array([-7.55522e-06], dtype=float32) array([2.89143e-05], dtype=float32) array([-5.53963e-05], dtype=float32) array([3.87085e-05], dtype=float32) array([-8.05905e-06], dtype=float32) array([7.11427e-06], dtype=float32) array([-4.78775e-05], dtype=float32) array([-1.29145e-06], dtype=float32) array([2.92153e-05], dtype=float32) array([-1.07967e-05], dtype=float32) array([9.14286e-06], dtype=float32) array([-3.01299e-05], dtype=float32) array([-1.6913e-05], dtype=float32) array([2.18763e-05], dtype=float32) array([-2.01614e-05], dtype=float32) array([-2.22373e-05], dtype=float32) array([-2.72491e-06], dtype=float32) array([2.66849e-05], dtype=float32) array([1.54107e-06], dtype=float32) array([-2.19999e-05], dtype=float32) array([-1.90508e-06], dtype=float32) array([1.70908e-05], dtype=float32) array([1.03209e-05], dtype=float32) array([5.32779e-05], dtype=float32) array([-3.20503e-05], dtype=float32) array([-7.28089e-06], dtype=float32) array([1.10472e-05], dtype=float32) array([-1.29559e-05], dtype=float32) array([-3.12548e-05], dtype=float32) array([1.20547e-05], dtype=float32) array([1.15401e-05], dtype=float32) array([8.75127e-05], dtype=float32) array([-2.89224e-05], dtype=float32) array([-3.34348e-05], dtype=float32) array([-7.00542e-05], dtype=float32) array([-2.20092e-05], dtype=float32) array([3.44622e-05], dtype=float32) array([-1.13281e-05], dtype=float32) array([4.98945e-05], dtype=float32) array([-3.48736e-05], dtype=float32) array([4.27282e-05], dtype=float32) array([-1.42413e-05], dtype=float32) array([-2.57788e-05], dtype=float32) array([-3.23518e-05], dtype=float32) array([2.68637e-05], dtype=float32) array([5.09441e-06], dtype=float32) array([2.229e-05], dtype=float32) array([-1.10734e-05], dtype=float32) array([-3.00834e-05], dtype=float32) array([2.38673e-05], dtype=float32) array([1.65489e-05], dtype=float32) array([3.85982e-05], dtype=float32) array([2.44428e-05], dtype=float32) array([7.0369e-06], dtype=float32) array([3.35396e-05], dtype=float32) array([3.22337e-05], dtype=float32) array([1.96438e-05], dtype=float32) array([-3.53726e-05], dtype=float32) array([2.83214e-05], dtype=float32) array([-7.15732e-05], dtype=float32) array([-6.11026e-07], dtype=float32) array([9.41224e-06], dtype=float32) array([2.28342e-05], dtype=float32) array([-5.61976e-05], dtype=float32) array([-4.4055e-05], dtype=float32) array([-5.70152e-06], dtype=float32) array([1.43963e-05], dtype=float32) array([-3.23139e-05], dtype=float32) array([-5.23419e-05], dtype=float32) array([-1.07981e-05], dtype=float32) array([6.46115e-06], dtype=float32) array([-1.29088e-05], dtype=float32) array([2.61925e-06], dtype=float32) array([-4.01611e-05], dtype=float32) array([6.22632e-06], dtype=float32) array([3.90174e-05], dtype=float32) array([1.06675e-05], dtype=float32) array([6.60032e-06], dtype=float32) array([2.88557e-06], dtype=float32) array([-3.46483e-05], dtype=float32) array([-7.40331e-05], dtype=float32) array([-1.42597e-05], dtype=float32) array([-2.43892e-05], dtype=float32) array([4.21728e-06], dtype=float32) array([-2.40713e-05], dtype=float32) array([3.19006e-05], dtype=float32) array([6.36393e-05], dtype=float32) array([6.9877e-05], dtype=float32) array([-2.59658e-05], dtype=float32) array([-2.9061e-06], dtype=float32) array([3.14059e-05], dtype=float32) array([-9.92042e-05], dtype=float32) array([1.4595e-05], dtype=float32) array([-1.99792e-05], dtype=float32) array([1.4413e-05], dtype=float32) array([2.05768e-05], dtype=float32) array([1.4147e-05], dtype=float32) array([1.7728e-05], dtype=float32) array([-2.81151e-05], dtype=float32) array([2.51315e-05], dtype=float32) array([-2.49828e-05], dtype=float32) array([-2.08063e-05], dtype=float32) array([5.13424e-05], dtype=float32) array([4.47206e-06], dtype=float32) array([1.81864e-05], dtype=float32) array([1.94249e-05], dtype=float32) array([1.03954e-05], dtype=float32) array([-2.59834e-05], dtype=float32) array([-5.25051e-07], dtype=float32) array([-3.94689e-05], dtype=float32) array([9.81698e-06], dtype=float32) array([7.40011e-05], dtype=float32) array([2.90866e-05], dtype=float32) array([2.57873e-06], dtype=float32) array([2.02612e-05], dtype=float32) array([1.02526e-06], dtype=float32) array([3.66773e-05], dtype=float32) array([6.65619e-05], dtype=float32) array([-1.171e-05], dtype=float32) array([3.68807e-05], dtype=float32) array([-5.36171e-06], dtype=float32) array([-1.43968e-05], dtype=float32) array([-6.81458e-05], dtype=float32) array([7.7035e-05], dtype=float32) array([3.26111e-05], dtype=float32) array([-2.77948e-06], dtype=float32) array([1.37394e-05], dtype=float32) array([1.34066e-05], dtype=float32) array([-1.37915e-05], dtype=float32) 
+
+zxddebug enter transforms.cpp value_and_grad
+zxddebug enter transforms.cpp vjp
+zxddebug cotans:array(1, dtype=float32)
+zxddebug cotans:1
+zxddebug outputs:1
+zxddebug out:array(0.499206, dtype=float32)
+zxddebug out.shape:()
+zxddebug cotan_index:0
+zxddebug cotans.shape:()
+zxddebug tape.size:0
+zxddebug tape.size:17
+zxddebug Run the tape backwards
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.499206, dtype=float32)
+zxddebug vjps:
+array(1, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.499206, dtype=float32)
+zxddebug vjps:
+array(0.00223214, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core7SqueezeE
+zxddebug cotangents.size:1
+zxddebug a:array(223.644, dtype=float32)
+zxddebug vjps:
+array([0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6ReduceE
+zxddebug cotangents.size:1
+zxddebug a:array([[223.644]], dtype=float32)
+zxddebug vjps:
+array([0.00223214, 0.00223214, 0.00223214, ..., 0.00223214, 0.00223214, 0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6SquareE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.00286751, 0.0168049, 0.126589, ..., 0.988476, 0.975673, 0.697474]], dtype=float32)
+zxddebug vjps:
+array([0.000239059, 0.000578722, 0.00158837, ..., 0.00443849, 0.00440965, 0.00372834], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8SubtractE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0535491, 0.129634, 0.355794, ..., 0.994221, 0.987762, 0.835149]], dtype=float32)
+zxddebug vjps:
+array([0.000239059, 0.000578722, 0.00158837, ..., 0.00443849, 0.00440965, 0.00372834], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0501754, 0.120704, 0.356977, ..., 0.968118, 0.999808, 0.838711]], dtype=float32)
+zxddebug vjps:
+array([0.000239059, 0.000578722, 0.00158837, ..., 0.00337659, 0.00409997, 0.00431449], dtype=float32) 
+array([0.00192478, 0.000254122, 0.000504611, ..., 0.00443849, 0.00440965, 0.00372834], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.431466, 0.056684, 0.0893196, ..., 0.968118, 0.999808, 0.838711]], dtype=float32)
+zxddebug vjps:
+array([0.00192478, 0.000254122, 0.000504611, ..., -0.00102028, 0.000106598, -0.00244384], dtype=float32) 
+array([0.00402951, 0.00449582, 0.00442861, ..., 0.00443849, 0.00440965, 0.00372834], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.902129, 0.998392, 0.996003, ..., 0.968118, 0.999808, 0.838711]], dtype=float32)
+zxddebug vjps:
+array([-0.00173859, -0.000254841, -0.000395562, ..., 0.00111182, -8.63172e-05, 0.00203037], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.431466, 0.056684, 0.0893196, ..., -0.250495, 0.0195746, -0.544577]], dtype=float32)
+zxddebug vjps:
+array([0.0017364, 0.000253713, 0.000502594, ..., -0.00098775, 0.000106578, -0.00204968], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.446117, 0.0567144, 0.0894388, ..., -0.253192, 0.0195759, -0.575885]], dtype=float32)
+zxddebug vjps:
+array([-1.6054e-06, -8.25303e-07, 7.83405e-05, ..., 9.081e-05, 1.48295e-05, -1.41326e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.609507, 0.077486, 0.122196, ..., -0.345923, 0.0267455, -0.786802]], dtype=float32)
+zxddebug vjps:
+array([-1.6054e-06], dtype=float32) array([-8.25303e-07], dtype=float32) array([7.83405e-05], dtype=float32) array([3.93944e-05], dtype=float32) array([5.76002e-05], dtype=float32) array([-6.77557e-06], dtype=float32) array([1.822e-05], dtype=float32) array([2.91481e-05], dtype=float32) array([4.62626e-05], dtype=float32) array([2.28883e-05], dtype=float32) array([5.49646e-05], dtype=float32) array([2.08494e-05], dtype=float32) array([-6.14231e-05], dtype=float32) array([6.5368e-05], dtype=float32) array([-4.26807e-07], dtype=float32) array([1.3942e-05], dtype=float32) array([9.71354e-06], dtype=float32) array([-5.70484e-06], dtype=float32) array([-3.86471e-05], dtype=float32) array([7.89486e-06], dtype=float32) array([-5.76854e-05], dtype=float32) array([-1.48705e-05], dtype=float32) array([-9.51159e-06], dtype=float32) array([1.28816e-05], dtype=float32) array([2.46287e-05], dtype=float32) array([-7.33342e-06], dtype=float32) array([-2.23293e-05], dtype=float32) array([-3.31434e-05], dtype=float32) array([-5.25637e-05], dtype=float32) array([1.80087e-05], dtype=float32) array([-1.10363e-05], dtype=float32) array([-2.24012e-06], dtype=float32) array([1.24385e-05], dtype=float32) array([-3.70723e-05], dtype=float32) array([2.52151e-05], dtype=float32) array([4.17039e-05], dtype=float32) array([2.07809e-05], dtype=float32) array([7.15517e-06], dtype=float32) array([-3.31338e-05], dtype=float32) array([-9.61508e-06], dtype=float32) array([-1.30461e-05], dtype=float32) array([-8.06292e-05], dtype=float32) array([5.69752e-05], dtype=float32) array([-1.29589e-05], dtype=float32) array([-2.86032e-05], dtype=float32) array([-4.38021e-05], dtype=float32) array([5.46008e-05], dtype=float32) array([5.08692e-08], dtype=float32) array([2.71726e-05], dtype=float32) array([4.8904e-05], dtype=float32) array([2.67146e-05], dtype=float32) array([-1.96337e-05], dtype=float32) array([7.09603e-06], dtype=float32) array([-2.12144e-05], dtype=float32) array([-4.63029e-05], dtype=float32) array([-1.80519e-05], dtype=float32) array([1.19243e-05], dtype=float32) array([-4.52896e-05], dtype=float32) array([2.21087e-05], dtype=float32) array([-5.00358e-06], dtype=float32) array([2.86628e-05], dtype=float32) array([9.081e-05], dtype=float32) array([1.48295e-05], dtype=float32) array([-1.41326e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0501754, 0.120704, 0.356977, ..., 0.769618, 0.933902, 0.962435]], dtype=float32)
+zxddebug vjps:
+array([0.000239059, 0.000578722, 0.00158837, ..., 0.0028239, 0.00158759, 0.00119726], dtype=float32) 
+array([0.00442874, 0.00443239, 0.00427377, ..., 0.00337659, 0.00409997, 0.00431449], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.99874, 0.992689, 0.934113, ..., 0.769618, 0.933902, 0.962435]], dtype=float32)
+zxddebug vjps:
+array([-0.000222213, -0.000535005, -0.00152564, ..., -0.00215597, -0.00146586, -0.00117144], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0501754, 0.120704, 0.356977, ..., 0.638504, 0.35753, 0.271512]], dtype=float32)
+zxddebug vjps:
+array([0.000238757, 0.000574491, 0.00148371, ..., 0.00217333, 0.00148265, 0.00115229], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0501964, 0.120999, 0.36503, ..., 0.692553, 0.365621, 0.274964]], dtype=float32)
+zxddebug vjps:
+array([1.21091e-05, 2.89005e-05, -3.06876e-05, ..., 1.27074e-05, 1.22894e-05, -1.40138e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0685809, 0.165314, 0.498722, ..., 0.9462, 0.49953, 0.375669]], dtype=float32)
+zxddebug vjps:
+array([1.21091e-05], dtype=float32) array([2.89005e-05], dtype=float32) array([-3.06876e-05], dtype=float32) array([1.03393e-05], dtype=float32) array([1.30359e-05], dtype=float32) array([4.64369e-05], dtype=float32) array([-5.03555e-05], dtype=float32) array([-3.8629e-05], dtype=float32) array([4.30437e-05], dtype=float32) array([-2.46161e-05], dtype=float32) array([-1.59031e-06], dtype=float32) array([9.6016e-05], dtype=float32) array([-5.92042e-06], dtype=float32) array([-4.05663e-06], dtype=float32) array([-8.70142e-05], dtype=float32) array([-1.76611e-05], dtype=float32) array([2.30718e-05], dtype=float32) array([7.62202e-06], dtype=float32) array([-4.4658e-05], dtype=float32) array([-6.21471e-05], dtype=float32) array([-4.22921e-06], dtype=float32) array([-1.51815e-06], dtype=float32) array([4.29686e-05], dtype=float32) array([4.55138e-05], dtype=float32) array([5.19569e-05], dtype=float32) array([6.96533e-06], dtype=float32) array([2.36786e-05], dtype=float32) array([-2.59535e-05], dtype=float32) array([-2.27079e-06], dtype=float32) array([-9.07976e-06], dtype=float32) array([-4.99821e-05], dtype=float32) array([-6.64639e-06], dtype=float32) array([2.83947e-05], dtype=float32) array([-5.50709e-05], dtype=float32) array([3.94314e-05], dtype=float32) array([-7.53145e-06], dtype=float32) array([6.2379e-06], dtype=float32) array([-4.68286e-05], dtype=float32) array([-7.63762e-07], dtype=float32) array([2.83799e-05], dtype=float32) array([-9.72342e-06], dtype=float32) array([1.02103e-05], dtype=float32) array([-3.04722e-05], dtype=float32) array([-1.65534e-05], dtype=float32) array([2.15669e-05], dtype=float32) array([-2.14292e-05], dtype=float32) array([-2.3165e-05], dtype=float32) array([-2.19594e-06], dtype=float32) array([2.60711e-05], dtype=float32) array([4.01585e-07], dtype=float32) array([-2.16102e-05], dtype=float32) array([-9.64895e-07], dtype=float32) array([1.76024e-05], dtype=float32) array([1.00914e-05], dtype=float32) array([5.34011e-05], dtype=float32) array([-3.32972e-05], dtype=float32) array([-7.89413e-06], dtype=float32) array([1.09642e-05], dtype=float32) array([-1.3103e-05], dtype=float32) array([-3.0643e-05], dtype=float32) array([1.18918e-05], dtype=float32) array([1.25691e-05], dtype=float32) array([8.74298e-05], dtype=float32) array([-2.87743e-05], dtype=float32) array([-3.38945e-05], dtype=float32) array([-6.90899e-05], dtype=float32) array([-2.262e-05], dtype=float32) array([3.37781e-05], dtype=float32) array([-1.23622e-05], dtype=float32) array([4.9044e-05], dtype=float32) array([-3.49036e-05], dtype=float32) array([4.24817e-05], dtype=float32) array([-1.44524e-05], dtype=float32) array([-2.56749e-05], dtype=float32) array([-3.21737e-05], dtype=float32) array([2.73814e-05], dtype=float32) array([5.43733e-06], dtype=float32) array([2.19333e-05], dtype=float32) array([-9.2921e-06], dtype=float32) array([-3.01073e-05], dtype=float32) array([2.35e-05], dtype=float32) array([1.81052e-05], dtype=float32) array([3.81277e-05], dtype=float32) array([2.42335e-05], dtype=float32) array([8.015e-06], dtype=float32) array([3.35288e-05], dtype=float32) array([3.2241e-05], dtype=float32) array([1.89563e-05], dtype=float32) array([-3.54339e-05], dtype=float32) array([2.85969e-05], dtype=float32) array([-7.06737e-05], dtype=float32) array([-1.93763e-07], dtype=float32) array([9.38319e-06], dtype=float32) array([2.38074e-05], dtype=float32) array([-5.75139e-05], dtype=float32) array([-4.58162e-05], dtype=float32) array([-6.12432e-06], dtype=float32) array([1.39932e-05], dtype=float32) array([-3.21875e-05], dtype=float32) array([-5.29275e-05], dtype=float32) array([-1.01729e-05], dtype=float32) array([8.97078e-06], dtype=float32) array([-1.25504e-05], dtype=float32) array([2.16859e-06], dtype=float32) array([-3.92504e-05], dtype=float32) array([6.59331e-06], dtype=float32) array([3.88778e-05], dtype=float32) array([1.01737e-05], dtype=float32) array([6.05319e-06], dtype=float32) array([3.21992e-06], dtype=float32) array([-3.37913e-05], dtype=float32) array([-7.40274e-05], dtype=float32) array([-1.44894e-05], dtype=float32) array([-2.31196e-05], dtype=float32) array([3.39605e-06], dtype=float32) array([-2.45554e-05], dtype=float32) array([3.15371e-05], dtype=float32) array([6.22701e-05], dtype=float32) array([7.0266e-05], dtype=float32) array([-2.54078e-05], dtype=float32) array([-4.24566e-06], dtype=float32) array([3.2131e-05], dtype=float32) array([-9.85025e-05], dtype=float32) array([1.47337e-05], dtype=float32) array([-1.98124e-05], dtype=float32) array([1.4623e-05], dtype=float32) array([2.01595e-05], dtype=float32) array([1.38814e-05], dtype=float32) array([1.76866e-05], dtype=float32) array([-2.68144e-05], dtype=float32) array([2.59217e-05], dtype=float32) array([-2.49541e-05], dtype=float32) array([-2.12347e-05], dtype=float32) array([5.2634e-05], dtype=float32) array([5.43116e-06], dtype=float32) array([1.79302e-05], dtype=float32) array([1.95439e-05], dtype=float32) array([1.11312e-05], dtype=float32) array([-2.63899e-05], dtype=float32) array([-1.20893e-06], dtype=float32) array([-3.90512e-05], dtype=float32) array([9.52991e-06], dtype=float32) array([7.49344e-05], dtype=float32) array([2.93063e-05], dtype=float32) array([2.45787e-06], dtype=float32) array([1.85307e-05], dtype=float32) array([4.63276e-07], dtype=float32) array([3.7317e-05], dtype=float32) array([6.67565e-05], dtype=float32) array([-1.0384e-05], dtype=float32) array([3.78487e-05], dtype=float32) array([-5.76261e-06], dtype=float32) array([-1.46195e-05], dtype=float32) array([-6.76256e-05], dtype=float32) array([7.72296e-05], dtype=float32) array([3.28083e-05], dtype=float32) array([-3.26278e-06], dtype=float32) array([1.27074e-05], dtype=float32) array([1.22894e-05], dtype=float32) array([-1.40138e-05], dtype=float32) 
+
+Weight of mul1 shape: (160, 1)
+Weight of mul2 shape: (64, 1)
+第 1 epoch
+Loss: array(0.499393, dtype=float32)
+Grad shape: (160, 1)
+Grad: [[1.2587432138388976e-05], [2.8799993742723018e-05], [-2.9089233066770248e-05], [9.816469173529185e-06], [1.2529405466921162e-05], [4.7681696742074564e-05], [-4.9264348490396515e-05], [-3.9085065509425476e-05], [4.3073563574580476e-05], [-2.434195630485192e-05], [-2.736624310273328e-06], [9.656805923441425e-05], [-6.018238764227135e-06], [-4.245010131853633e-06], [-8.820209041005e-05], [-1.7805823517846875e-05], [2.337237492611166e-05], [7.679878763156012e-06], [-4.506427649175748e-05], [-6.269133155001327e-05], [-4.46097783424193e-06], [-1.9975623217760585e-06], [4.2947711335727945e-05], [4.422357233124785e-05], [5.184427573112771e-05], [6.370743903971743e-06], [2.3773704015184194e-05], [-2.4954346372396685e-05], [-3.5724292501981836e-06], [-8.19802880869247e-06], [-5.0613871280802414e-05], [-7.555219781352207e-06], [2.8914342692587525e-05], [-5.539625635719858e-05], [3.870853106491268e-05], [-8.05905438028276e-06], [7.1142685555969365e-06], [-4.787750367540866e-05], [-1.2914545095554786e-06], [2.921525447163731e-05], [-1.0796701644721907e-05], [9.142857379629277e-06], [-3.0129876904538833e-05], [-1.6913014405872673e-05], [2.187633617722895e-05], [-2.0161429347353987e-05], [-2.2237320081330836e-05], [-2.724908199525089e-06], [2.6684920158004388e-05], [1.5410712421726203e-06], [-2.1999929231242277e-05], [-1.905079670905252e-06], [1.7090842447942123e-05], [1.0320942237740383e-05], [5.327789767761715e-05], [-3.205029497621581e-05], [-7.280892987182597e-06], [1.1047212865378242e-05], [-1.2955913916812278e-05], [-3.125479270238429e-05], [1.2054711987730116e-05], [1.154009805759415e-05], [8.751267159823328e-05], [-2.892235352192074e-05], [-3.343484058859758e-05], [-7.005423685768619e-05], [-2.2009216991136782e-05], [3.446219125180505e-05], [-1.1328143045830075e-05], [4.989446097170003e-05], [-3.487363937892951e-05], [4.2728217522380874e-05], [-1.4241318240237888e-05], [-2.5778817871469073e-05], [-3.235184703953564e-05], [2.6863684979616664e-05], [5.094414063933073e-06], [2.2289978005574085e-05], [-1.1073371751990635e-05], [-3.0083354431553744e-05], [2.386726191616617e-05], [1.6548920029890724e-05], [3.859818752971478e-05], [2.4442757421638817e-05], [7.036899660306517e-06], [3.35396034643054e-05], [3.223366366000846e-05], [1.9643759515020065e-05], [-3.537255179253407e-05], [2.8321423087618314e-05], [-7.157315849326551e-05], [-6.110263370828761e-07], [9.412242434336804e-06], [2.283420144522097e-05], [-5.619755029329099e-05], [-4.405498839332722e-05], [-5.7015204220078886e-06], [1.4396311598829925e-05], [-3.2313928386429325e-05], [-5.2341889386298135e-05], [-1.0798064977279864e-05], [6.4611494963173755e-06], [-1.2908793905808125e-05], [2.619250153657049e-06], [-4.016107050119899e-05], [6.226316600077553e-06], [3.901741001754999e-05], [1.0667526112229098e-05], [6.600315373361809e-06], [2.8855677101091715e-06], [-3.4648284781724215e-05], [-7.403305062325671e-05], [-1.4259723684517667e-05], [-2.4389160898863338e-05], [4.217283276375383e-06], [-2.4071250663837418e-05], [3.190056304447353e-05], [6.363927241181955e-05], [6.987696542637423e-05], [-2.59657645074185e-05], [-2.906102963606827e-06], [3.140586704830639e-05], [-9.920422598952428e-05], [1.4595017091778573e-05], [-1.9979239368694834e-05], [1.4413033568416722e-05], [2.0576786482706666e-05], [1.4146982721285895e-05], [1.7728028979036026e-05], [-2.8115082386648282e-05], [2.5131450456683524e-05], [-2.4982848117360845e-05], [-2.0806337488465942e-05], [5.134240200277418e-05], [4.472055024962174e-06], [1.818636155803688e-05], [1.9424913261900656e-05], [1.0395371646154672e-05], [-2.598340142867528e-05], [-5.250514618637681e-07], [-3.946892684325576e-05], [9.816980309551582e-06], [7.400107278954238e-05], [2.90865918941563e-05], [2.5787339836824685e-06], [2.0261175450286828e-05], [1.0252648507957929e-06], [3.6677258322015405e-05], [6.65619081701152e-05], [-1.1710045328072738e-05], [3.688073411467485e-05], [-5.36171137355268e-06], [-1.4396822734852321e-05], [-6.814584048697725e-05], [7.703498704358935e-05], [3.261113306507468e-05], [-2.7794837933470262e-06], [1.3739443602389656e-05], [1.3406621292233467e-05], [-1.3791505807603244e-05]]
+Grad shape: (64, 1)
+Grad: [[-1.5864019360378734e-06], [-4.4272994159655354e-07], [7.84598378231749e-05], [3.838721022475511e-05], [5.7777029724093154e-05], [-7.381736395473126e-06], [1.9883576896972954e-05], [2.9076196369715035e-05], [4.6674984332639724e-05], [2.2271658963290974e-05], [5.520283229998313e-05], [2.0676479834946804e-05], [-6.170458073029295e-05], [6.456548726418987e-05], [-8.669910585012985e-07], [1.4497879419650417e-05], [9.800961379369255e-06], [-5.1906986300309654e-06], [-3.8454098103102297e-05], [8.960938430391252e-06], [-5.732152931159362e-05], [-1.5637195247109048e-05], [-9.348421372123994e-06], [1.3353111171454657e-05], [2.5199489755323157e-05], [-7.908151019364595e-06], [-2.3368114852928557e-05], [-3.34013529936783e-05], [-5.3370691603049636e-05], [1.7067644876078703e-05], [-1.1336365787428804e-05], [-1.5219847000480513e-06], [1.114341284846887e-05], [-3.670682417578064e-05], [2.53180132858688e-05], [4.1470120777375996e-05], [2.072837196465116e-05], [6.017301529936958e-06], [-3.2580457627773285e-05], [-9.947476428351365e-06], [-1.4451441529672593e-05], [-8.06222451501526e-05], [5.687435623258352e-05], [-1.2829763363697566e-05], [-3.0205606890376657e-05], [-4.295503822504543e-05], [5.612069435301237e-05], [2.0023871627472545e-07], [2.8615731935133226e-05], [4.942140731145628e-05], [2.7521149604581296e-05], [-1.9428694940870628e-05], [7.339473540923791e-06], [-2.058436984953005e-05], [-4.668040492106229e-05], [-1.858181167335715e-05], [1.1796531907748431e-05], [-4.572634497890249e-05], [2.23879669647431e-05], [-4.888210696663009e-06], [2.805583062581718e-05], [8.929586329031736e-05], [1.571234861330595e-05], [-1.4235524758987594e-05]]
+第 2 epoch
+Loss: array(0.499206, dtype=float32)
+Grad shape: (160, 1)
+Grad: zxddebug enter transforms.cpp value_and_grad
+zxddebug enter transforms.cpp vjp
+zxddebug cotans:array(1, dtype=float32)
+zxddebug cotans:1
+zxddebug outputs:1
+zxddebug out:array(0.498954, dtype=float32)
+zxddebug out.shape:()
+zxddebug cotan_index:0
+zxddebug cotans.shape:()
+zxddebug tape.size:0
+zxddebug tape.size:17
+zxddebug Run the tape backwards
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.498954, dtype=float32)
+zxddebug vjps:
+array(1, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.498954, dtype=float32)
+zxddebug vjps:
+array(0.00223214, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core7SqueezeE
+zxddebug cotangents.size:1
+zxddebug a:array(223.531, dtype=float32)
+zxddebug vjps:
+array([0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6ReduceE
+zxddebug cotangents.size:1
+zxddebug a:array([[223.531]], dtype=float32)
+zxddebug vjps:
+array([0.00223214, 0.00223214, 0.00223214, ..., 0.00223214, 0.00223214, 0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6SquareE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.000531519, 0.00978897, 0.147831, ..., 0.972158, 0.975932, 0.724926]], dtype=float32)
+zxddebug vjps:
+array([0.000102923, 0.000441693, 0.00171646, ..., 0.0044017, 0.00441024, 0.00380101], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8SubtractE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0230547, 0.0989392, 0.384488, ..., 0.985981, 0.987893, 0.851426]], dtype=float32)
+zxddebug vjps:
+array([0.000102923, 0.000441693, 0.00171646, ..., 0.0044017, 0.00441024, 0.00380101], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0196809, 0.0900092, 0.385671, ..., 0.959878, 0.999939, 0.854988]], dtype=float32)
+zxddebug vjps:
+array([0.000102923, 0.000441693, 0.00171646, ..., 0.00346192, 0.00414667, 0.00427536], dtype=float32) 
+array([0.00203395, 0.00035483, 0.000366538, ..., 0.0044017, 0.00441024, 0.00380101], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.45592, 0.0792426, 0.0583912, ..., 0.959878, 0.999939, 0.854988]], dtype=float32)
+zxddebug vjps:
+array([0.00203395, 0.00035483, 0.000366538, ..., -0.00115387, -2.99856e-05, -0.00232809], dtype=float32) 
+array([0.00397545, 0.00448896, 0.00443883, ..., 0.0044017, 0.00441024, 0.00380101], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.890021, 0.996855, 0.998294, ..., 0.959878, 0.999939, 0.854988]], dtype=float32)
+zxddebug vjps:
+array([-0.00181249, -0.000355717, -0.000259189, ..., 0.00123432, 4.86018e-05, 0.00197139], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.45592, 0.0792426, 0.0583912, ..., -0.280419, -0.0110202, -0.518648]], dtype=float32)
+zxddebug vjps:
+array([0.00181026, 0.000353714, 0.000365913, ..., -0.00110757, -2.99838e-05, -0.00199049], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.473406, 0.0793258, 0.0584245, ..., -0.284231, -0.0110204, -0.545269]], dtype=float32)
+zxddebug vjps:
+array([-1.63139e-06, -1.46562e-06, 7.81143e-05, ..., 9.27712e-05, 1.36271e-05, -1.39823e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.64679, 0.108379, 0.0798224, ..., -0.38833, -0.0150567, -0.744974]], dtype=float32)
+zxddebug vjps:
+array([-1.63139e-06], dtype=float32) array([-1.46562e-06], dtype=float32) array([7.81143e-05], dtype=float32) array([4.07192e-05], dtype=float32) array([5.7314e-05], dtype=float32) array([-5.94905e-06], dtype=float32) array([1.59677e-05], dtype=float32) array([2.9221e-05], dtype=float32) array([4.56689e-05], dtype=float32) array([2.37021e-05], dtype=float32) array([5.45983e-05], dtype=float32) array([2.10655e-05], dtype=float32) array([-6.09928e-05], dtype=float32) array([6.63934e-05], dtype=float32) array([1.38804e-07], dtype=float32) array([1.31802e-05], dtype=float32) array([9.58709e-06], dtype=float32) array([-6.40576e-06], dtype=float32) array([-3.8875e-05], dtype=float32) array([6.45144e-06], dtype=float32) array([-5.81269e-05], dtype=float32) array([-1.38245e-05], dtype=float32) array([-9.7253e-06], dtype=float32) array([1.22338e-05], dtype=float32) array([2.38393e-05], dtype=float32) array([-6.54951e-06], dtype=float32) array([-2.09118e-05], dtype=float32) array([-3.27684e-05], dtype=float32) array([-5.14338e-05], dtype=float32) array([1.92669e-05], dtype=float32) array([-1.06216e-05], dtype=float32) array([-3.27403e-06], dtype=float32) array([1.41873e-05], dtype=float32) array([-3.75339e-05], dtype=float32) array([2.50556e-05], dtype=float32) array([4.19842e-05], dtype=float32) array([2.08349e-05], dtype=float32) array([8.70757e-06], dtype=float32) array([-3.38519e-05], dtype=float32) array([-9.15739e-06], dtype=float32) array([-1.11441e-05], dtype=float32) array([-8.05709e-05], dtype=float32) array([5.70632e-05], dtype=float32) array([-1.31229e-05], dtype=float32) array([-2.64239e-05], dtype=float32) array([-4.49071e-05], dtype=float32) array([5.25109e-05], dtype=float32) array([-1.19206e-07], dtype=float32) array([2.52084e-05], dtype=float32) array([4.81669e-05], dtype=float32) array([2.5606e-05], dtype=float32) array([-1.98944e-05], dtype=float32) array([6.75989e-06], dtype=float32) array([-2.20477e-05], dtype=float32) array([-4.57561e-05], dtype=float32) array([-1.73223e-05], dtype=float32) array([1.20878e-05], dtype=float32) array([-4.46639e-05], dtype=float32) array([2.17137e-05], dtype=float32) array([-5.15755e-06], dtype=float32) array([2.94576e-05], dtype=float32) array([9.27712e-05], dtype=float32) array([1.36271e-05], dtype=float32) array([-1.39823e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0196809, 0.0900092, 0.385671, ..., 0.788733, 0.944362, 0.953671]], dtype=float32)
+zxddebug vjps:
+array([0.000102923, 0.000441693, 0.00171646, ..., 0.0027178, 0.00145981, 0.00132825], dtype=float32) 
+array([0.00443349, 0.00444691, 0.00422254, ..., 0.00346192, 0.00414667, 0.00427536], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.999806, 0.995941, 0.922636, ..., 0.788733, 0.944362, 0.953671]], dtype=float32)
+zxddebug vjps:
+array([-8.72553e-05, -0.000400263, -0.00162851, ..., -0.00212817, -0.00136387, -0.00128626], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0196809, 0.0900092, 0.385671, ..., 0.614736, 0.328908, 0.300853]], dtype=float32)
+zxddebug vjps:
+array([0.000102903, 0.0004399, 0.00158367, ..., 0.00214361, 0.00137859, 0.00126671], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0196822, 0.0901312, 0.395935, ..., 0.662052, 0.335147, 0.305587]], dtype=float32)
+zxddebug vjps:
+array([1.14529e-05, 2.9012e-05, -3.28197e-05, ..., 1.13059e-05, 1.07738e-05, -1.43031e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.0268908, 0.123142, 0.540946, ..., 0.904527, 0.457894, 0.417508]], dtype=float32)
+zxddebug vjps:
+array([1.14529e-05], dtype=float32) array([2.9012e-05], dtype=float32) array([-3.28197e-05], dtype=float32) array([1.10411e-05], dtype=float32) array([1.37115e-05], dtype=float32) array([4.47237e-05], dtype=float32) array([-5.17829e-05], dtype=float32) array([-3.79828e-05], dtype=float32) array([4.29676e-05], dtype=float32) array([-2.49656e-05], dtype=float32) array([-1.00016e-07], dtype=float32) array([9.51928e-05], dtype=float32) array([-5.78255e-06], dtype=float32) array([-3.79588e-06], dtype=float32) array([-8.5344e-05], dtype=float32) array([-1.74514e-05], dtype=float32) array([2.26475e-05], dtype=float32) array([7.53784e-06], dtype=float32) array([-4.40739e-05], dtype=float32) array([-6.1363e-05], dtype=float32) array([-3.90934e-06], dtype=float32) array([-8.65223e-07], dtype=float32) array([4.29607e-05], dtype=float32) array([4.72142e-05], dtype=float32) array([5.20653e-05], dtype=float32) array([7.77216e-06], dtype=float32) array([2.3531e-05], dtype=float32) array([-2.72805e-05], dtype=float32) array([-5.60157e-07], dtype=float32) array([-1.0274e-05], dtype=float32) array([-4.90904e-05], dtype=float32) array([-5.41463e-06], dtype=float32) array([2.76713e-05], dtype=float32) array([-5.45869e-05], dtype=float32) array([4.03726e-05], dtype=float32) array([-6.81093e-06], dtype=float32) array([5.04925e-06], dtype=float32) array([-4.53778e-05], dtype=float32) array([-6.659e-08], dtype=float32) array([2.72313e-05], dtype=float32) array([-8.26875e-06], dtype=float32) array([1.16546e-05], dtype=float32) array([-3.09085e-05], dtype=float32) array([-1.60543e-05], dtype=float32) array([2.11315e-05], dtype=float32) array([-2.31253e-05], dtype=float32) array([-2.4399e-05], dtype=float32) array([-1.47504e-06], dtype=float32) array([2.52226e-05], dtype=float32) array([-8.85992e-07], dtype=float32) array([-2.10669e-05], dtype=float32) array([2.33811e-07], dtype=float32) array([1.82798e-05], dtype=float32) array([9.77242e-06], dtype=float32) array([5.3522e-05], dtype=float32) array([-3.49516e-05], dtype=float32) array([-8.72423e-06], dtype=float32) array([1.08429e-05], dtype=float32) array([-1.32915e-05], dtype=float32) array([-2.97935e-05], dtype=float32) array([1.16616e-05], dtype=float32) array([1.39554e-05], dtype=float32) array([8.7245e-05], dtype=float32) array([-2.85506e-05], dtype=float32) array([-3.44859e-05], dtype=float32) array([-6.77353e-05], dtype=float32) array([-2.34261e-05], dtype=float32) array([3.28291e-05], dtype=float32) array([-1.3756e-05], dtype=float32) array([4.78588e-05], dtype=float32) array([-3.49149e-05], dtype=float32) array([4.21143e-05], dtype=float32) array([-1.47262e-05], dtype=float32) array([-2.55137e-05], dtype=float32) array([-3.19069e-05], dtype=float32) array([2.80573e-05], dtype=float32) array([5.90308e-06], dtype=float32) array([2.14341e-05], dtype=float32) array([-6.89571e-06], dtype=float32) array([-3.01144e-05], dtype=float32) array([2.29856e-05], dtype=float32) array([2.01974e-05], dtype=float32) array([3.74625e-05], dtype=float32) array([2.39313e-05], dtype=float32) array([9.34382e-06], dtype=float32) array([3.34865e-05], dtype=float32) array([3.22241e-05], dtype=float32) array([1.80138e-05], dtype=float32) array([-3.5487e-05], dtype=float32) array([2.89445e-05], dtype=float32) array([-6.94048e-05], dtype=float32) array([2.98654e-07], dtype=float32) array([9.33658e-06], dtype=float32) array([2.51018e-05], dtype=float32) array([-5.92385e-05], dtype=float32) array([-4.81515e-05], dtype=float32) array([-6.6982e-06], dtype=float32) array([1.34371e-05], dtype=float32) array([-3.199e-05], dtype=float32) array([-5.36718e-05], dtype=float32) array([-9.31972e-06], dtype=float32) array([1.2387e-05], dtype=float32) array([-1.20556e-05], dtype=float32) array([1.55187e-06], dtype=float32) array([-3.79918e-05], dtype=float32) array([7.08956e-06], dtype=float32) array([3.86575e-05], dtype=float32) array([9.49762e-06], dtype=float32) array([5.30669e-06], dtype=float32) array([3.68286e-06], dtype=float32) array([-3.26094e-05], dtype=float32) array([-7.39577e-05], dtype=float32) array([-1.4788e-05], dtype=float32) array([-2.1392e-05], dtype=float32) array([2.28562e-06], dtype=float32) array([-2.51883e-05], dtype=float32) array([3.10212e-05], dtype=float32) array([6.03769e-05], dtype=float32) array([7.07307e-05], dtype=float32) array([-2.46348e-05], dtype=float32) array([-6.10898e-06], dtype=float32) array([3.30822e-05], dtype=float32) array([-9.74763e-05], dtype=float32) array([1.49092e-05], dtype=float32) array([-1.9571e-05], dtype=float32) array([1.48952e-05], dtype=float32) array([1.95803e-05], dtype=float32) array([1.3511e-05], dtype=float32) array([1.76161e-05], dtype=float32) array([-2.50417e-05], dtype=float32) array([2.69669e-05], dtype=float32) array([-2.48948e-05], dtype=float32) array([-2.17957e-05], dtype=float32) array([5.43299e-05], dtype=float32) array([6.74813e-06], dtype=float32) array([1.75698e-05], dtype=float32) array([1.96884e-05], dtype=float32) array([1.21217e-05], dtype=float32) array([-2.69167e-05], dtype=float32) array([-2.33572e-06], dtype=float32) array([-3.84559e-05], dtype=float32) array([9.13336e-06], dtype=float32) array([7.61276e-05], dtype=float32) array([2.95782e-05], dtype=float32) array([2.28894e-06], dtype=float32) array([1.61886e-05], dtype=float32) array([-2.44334e-07], dtype=float32) array([3.81482e-05], dtype=float32) array([6.69622e-05], dtype=float32) array([-8.59084e-06], dtype=float32) array([3.91219e-05], dtype=float32) array([-6.30718e-06], dtype=float32) array([-1.49088e-05], dtype=float32) array([-6.68691e-05], dtype=float32) array([7.74268e-05], dtype=float32) array([3.30465e-05], dtype=float32) array([-3.9349e-06], dtype=float32) array([1.13059e-05], dtype=float32) array([1.07738e-05], dtype=float32) array([-1.43031e-05], dtype=float32) 
+
+[[1.210909613291733e-05], [2.8900454708491452e-05], [-3.068756268476136e-05], [1.0339304935769178e-05], [1.3035881238465663e-05], [4.64368931716308e-05], [-5.0355520215816796e-05], [-3.86290303140413e-05], [4.3043655750807375e-05], [-2.4616070732008666e-05], [-1.5903108305792557e-06], [9.60160032263957e-05], [-5.920419880567351e-06], [-4.056634224980371e-06], [-8.701418119017035e-05], [-1.7661141100688837e-05], [2.3071846953826025e-05], [7.62202307669213e-06], [-4.465802703634836e-05], [-6.21471117483452e-05], [-4.229212208883837e-06], [-1.5181502703853766e-06], [4.296858605812304e-05], [4.551379242911935e-05], [5.19569221069105e-05], [6.965325155761093e-06], [2.3678612706135027e-05], [-2.5953493604902178e-05], [-2.2707922653353307e-06], [-9.07976118469378e-06], [-4.9982139898929745e-05], [-6.646391739195678e-06], [2.8394744731485844e-05], [-5.5070930102374405e-05], [3.943143383366987e-05], [-7.531446954089915e-06], [6.2379049268201925e-06], [-4.6828594349790365e-05], [-7.637615908606676e-07], [2.837987631210126e-05], [-9.723421499074902e-06], [1.0210343134531286e-05], [-3.047215795959346e-05], [-1.655335108807776e-05], [2.1566902432823554e-05], [-2.1429179469123483e-05], [-2.3164979211287573e-05], [-2.195936986026936e-06], [2.6071080355904996e-05], [4.0158514025279146e-07], [-2.1610188923659734e-05], [-9.64894979915698e-07], [1.760243139869999e-05], [1.0091392141475808e-05], [5.340110874385573e-05], [-3.329722676426172e-05], [-7.894134796515573e-06], [1.096422056434676e-05], [-1.3103025594318751e-05], [-3.0643001082353294e-05], [1.1891794201801531e-05], [1.2569053978950251e-05], [8.742984937271103e-05], [-2.8774260499631055e-05], [-3.3894451917149127e-05], [-6.908993964316323e-05], [-2.2619988158112392e-05], [3.37781420967076e-05], [-1.2362227607809473e-05], [4.9043999752029777e-05], [-3.4903569030575454e-05], [4.248170807841234e-05], [-1.4452378309215419e-05], [-2.567486444604583e-05], [-3.217369885533117e-05], [2.7381409381632693e-05], [5.437333129520994e-06], [2.193329783040099e-05], [-9.292099093727302e-06], [-3.0107254133326933e-05], [2.3500015231547877e-05], [1.8105158233083785e-05], [3.8127665902720764e-05], [2.4233486328739673e-05], [8.015002094907686e-06], [3.352882413309999e-05], [3.224099054932594e-05], [1.8956301573780365e-05], [-3.543390266713686e-05], [2.8596858101082034e-05], [-7.067366095725447e-05], [-1.9376291504613619e-07], [9.383186807099264e-06], [2.380744626861997e-05], [-5.7513927458785474e-05], [-4.5816152123734355e-05], [-6.12432268098928e-06], [1.3993192624184303e-05], [-3.218747951905243e-05], [-5.2927523938706145e-05], [-1.0172863767365925e-05], [8.970780072559137e-06], [-1.2550366591312923e-05], [2.168585297113168e-06], [-3.925036799046211e-05], [6.593307261937298e-06], [3.887783896061592e-05], [1.0173660484724678e-05], [6.053193374100374e-06], [3.2199238830799004e-06], [-3.379126428626478e-05], [-7.402740448014811e-05], [-1.4489359273284208e-05], [-2.3119648176361807e-05], [3.396048668946605e-06], [-2.45554019784322e-05], [3.153708530589938e-05], [6.227014819160104e-05], [7.026602543191984e-05], [-2.540782224969007e-05], [-4.245657237333944e-06], [3.2130985346157104e-05], [-9.850253991317004e-05], [1.4733650459675118e-05], [-1.981242894544266e-05], [1.4623039533034898e-05], [2.015952304645907e-05], [1.3881357517675497e-05], [1.76866178662749e-05], [-2.6814372176886536e-05], [2.5921712222043425e-05], [-2.4954089894890785e-05], [-2.1234676751191728e-05], [5.263398270471953e-05], [5.431155841506552e-06], [1.7930227841134183e-05], [1.9543853341019712e-05], [1.1131227438454516e-05], [-2.6389929189463146e-05], [-1.2089305982954102e-06], [-3.905115227098577e-05], [9.529914677841589e-06], [7.493443990824744e-05], [2.930634218500927e-05], [2.45786645791668e-06], [1.8530730812926777e-05], [4.632757111266983e-07], [3.731700053322129e-05], [6.675651820842177e-05], [-1.0384039342170581e-05], [3.784869841183536e-05], [-5.762614819104783e-06], [-1.4619471585319843e-05], [-6.76256458973512e-05], [7.722960435785353e-05], [3.280830424046144e-05], [-3.2627833661535988e-06], [1.2707404493994545e-05], [1.2289374353713356e-05], [-1.40138135975576e-05]]
+Grad shape: (64, 1)
+Grad: [[-1.6054033267209888e-06], [-8.253030614469026e-07], [7.834046118659899e-05], [3.939437010558322e-05], [5.76002239540685e-05], [-6.7755668169411365e-06], [1.822002923290711e-05], [2.9148111934773624e-05], [4.626255758921616e-05], [2.2888323655934073e-05], [5.4964591981843114e-05], [2.0849367501796223e-05], [-6.142309575807303e-05], [6.5367974457331e-05], [-4.2680670730987913e-07], [1.3941982615506276e-05], [9.713538020150736e-06], [-5.704843715648167e-06], [-3.86471365345642e-05], [7.894858754298184e-06], [-5.768536721006967e-05], [-1.4870493941998575e-05], [-9.511594726063777e-06], [1.2881570000899956e-05], [2.4628679966554046e-05], [-7.3334235821675975e-06], [-2.2329259081743658e-05], [-3.314342757221311e-05], [-5.2563686040230095e-05], [1.800870268198196e-05], [-1.1036348951165564e-05], [-2.2401175101549597e-06], [1.2438488738553133e-05], [-3.7072280974825844e-05], [2.5215082132490352e-05], [4.1703930037328973e-05], [2.0780858903890476e-05], [7.155168532335665e-06], [-3.313379784231074e-05], [-9.615079761715606e-06], [-1.3046106687397696e-05], [-8.062923006946221e-05], [5.697524466086179e-05], [-1.2958938896190375e-05], [-2.8603164537344128e-05], [-4.3802090658573434e-05], [5.4600754083367065e-05], [5.086915422225502e-08], [2.7172649424755946e-05], [4.890404670732096e-05], [2.671457150427159e-05], [-1.9633704141597264e-05], [7.096034096321091e-06], [-2.1214396838331595e-05], [-4.630288094631396e-05], [-1.8051903680316173e-05], [1.192434319818858e-05], [-4.528956924332306e-05], [2.210874117736239e-05], [-5.003582373319659e-06], [2.8662767363130115e-05], [9.080996096599847e-05], [1.4829541214567143e-05], [-1.4132593605609145e-05]]
+第 3 epoch
+Loss: array(0.498954, dtype=float32)
+Grad shape: (160, 1)
+Grad: zxddebug enter transforms.cpp value_and_grad
+zxddebug enter transforms.cpp vjp
+zxddebug cotans:array(1, dtype=float32)
+zxddebug cotans:1
+zxddebug outputs:1
+zxddebug out:array(0.498662, dtype=float32)
+zxddebug out.shape:()
+zxddebug cotan_index:0
+zxddebug cotans.shape:()
+zxddebug tape.size:0
+zxddebug tape.size:17
+zxddebug Run the tape backwards
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.498662, dtype=float32)
+zxddebug vjps:
+array(1, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.498662, dtype=float32)
+zxddebug vjps:
+array(0.00223214, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core7SqueezeE
+zxddebug cotangents.size:1
+zxddebug a:array(223.4, dtype=float32)
+zxddebug vjps:
+array([0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6ReduceE
+zxddebug cotangents.size:1
+zxddebug a:array([[223.4]], dtype=float32)
+zxddebug vjps:
+array([0.00223214, 0.00223214, 0.00223214, ..., 0.00223214, 0.00223214, 0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6SquareE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.000156038, 0.00397165, 0.174357, ..., 0.951019, 0.973911, 0.755883]], dtype=float32)
+zxddebug vjps:
+array([-5.57657e-05, 0.000281344, 0.00186411, ..., 0.00435358, 0.00440567, 0.00388132], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8SubtractE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0124915, 0.063021, 0.417561, ..., 0.975202, 0.986869, 0.869415]], dtype=float32)
+zxddebug vjps:
+array([-5.57657e-05, 0.000281344, 0.00186411, ..., 0.00435358, 0.00440567, 0.00388132], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0158653, 0.054091, 0.418744, ..., 0.949099, 0.998916, 0.872977]], dtype=float32)
+zxddebug vjps:
+array([-5.57657e-05, 0.000281344, 0.00186411, ..., 0.00355675, 0.00419585, 0.00422455], dtype=float32) 
+array([0.00216224, 0.000483318, 0.000205328, ..., 0.00435358, 0.00440567, 0.00388132], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.484657, 0.108024, 0.0222803, ..., 0.949099, 0.998916, 0.872977]], dtype=float32)
+zxddebug vjps:
+array([0.00216224, 0.000483318, 0.000205328, ..., -0.00130815, -0.000188629, -0.0021902], dtype=float32) 
+array([0.00390707, 0.00447687, 0.00444534, ..., 0.00435358, 0.00440567, 0.00388132], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.874704, 0.994148, 0.999752, ..., 0.949099, 0.998916, 0.872977]], dtype=float32)
+zxddebug vjps:
+array([-0.00189359, -0.000483609, -9.90434e-05, ..., 0.00137129, 0.000205111, 0.00189316], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.484657, 0.108024, 0.0222803, ..., -0.314979, -0.0465563, -0.487761]], dtype=float32)
+zxddebug vjps:
+array([0.00189132, 0.00048049, 0.000205277, ..., -0.00124157, -0.000188424, -0.001912], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.505971, 0.108235, 0.0222821, ..., -0.320434, -0.0465731, -0.509523]], dtype=float32)
+zxddebug vjps:
+array([-1.66062e-06, -2.28315e-06, 7.77558e-05, ..., 9.49458e-05, 1.22139e-05, -1.37901e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.691283, 0.147876, 0.0304429, ..., -0.437793, -0.0636304, -0.696136]], dtype=float32)
+zxddebug vjps:
+array([-1.66062e-06], dtype=float32) array([-2.28315e-06], dtype=float32) array([7.77558e-05], dtype=float32) array([4.22165e-05], dtype=float32) array([5.69112e-05], dtype=float32) array([-4.98381e-06], dtype=float32) array([1.3343e-05], dtype=float32) array([2.92706e-05], dtype=float32) array([4.4922e-05], dtype=float32) array([2.46245e-05], dtype=float32) array([5.41049e-05], dtype=float32) array([2.12926e-05], dtype=float32) array([-6.04176e-05], dtype=float32) array([6.75087e-05], dtype=float32) array([5.79585e-07], dtype=float32) array([1.22774e-05], dtype=float32) array([9.42801e-06], dtype=float32) array([-7.22393e-06], dtype=float32) array([-3.90938e-05], dtype=float32) array([4.7823e-06], dtype=float32) array([-5.85712e-05], dtype=float32) array([-1.25914e-05], dtype=float32) array([-9.9643e-06], dtype=float32) array([1.14649e-05], dtype=float32) array([2.28911e-05], dtype=float32) array([-5.63131e-06], dtype=float32) array([-1.92392e-05], dtype=float32) array([-3.22918e-05], dtype=float32) array([-5.0056e-05], dtype=float32) array([2.07162e-05], dtype=float32) array([-1.01252e-05], dtype=float32) array([-4.50835e-06], dtype=float32) array([1.62207e-05], dtype=float32) array([-3.80272e-05], dtype=float32) array([2.48391e-05], dtype=float32) array([4.22602e-05], dtype=float32) array([2.08729e-05], dtype=float32) array([1.0523e-05], dtype=float32) array([-3.46495e-05], dtype=float32) array([-8.61286e-06], dtype=float32) array([-8.9344e-06], dtype=float32) array([-8.04051e-05], dtype=float32) array([5.70965e-05], dtype=float32) array([-1.32996e-05], dtype=float32) array([-2.38622e-05], dtype=float32) array([-4.61419e-05], dtype=float32) array([5.00166e-05], dtype=float32) array([-1.80641e-07], dtype=float32) array([2.28967e-05], dtype=float32) array([4.725e-05], dtype=float32) array([2.4285e-05], dtype=float32) array([-2.01752e-05], dtype=float32) array([6.3595e-06], dtype=float32) array([-2.29956e-05], dtype=float32) array([-4.50636e-05], dtype=float32) array([-1.64519e-05], dtype=float32) array([1.22645e-05], dtype=float32) array([-4.3881e-05], dtype=float32) array([2.12271e-05], dtype=float32) array([-5.33308e-06], dtype=float32) array([3.03503e-05], dtype=float32) array([9.49458e-05], dtype=float32) array([1.22139e-05], dtype=float32) array([-1.37901e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0158653, 0.054091, 0.418744, ..., 0.809975, 0.955379, 0.942288]], dtype=float32)
+zxddebug vjps:
+array([-5.57657e-05, 0.000281344, 0.00186411, ..., 0.00259158, 0.00131015, 0.00147981], dtype=float32) 
+array([0.0044338, 0.00445849, 0.00415766, ..., 0.00355675, 0.00419585, 0.00422455], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.999874, 0.998536, 0.908104, ..., 0.809975, 0.955379, 0.942288]], dtype=float32)
+zxddebug vjps:
+array([7.03434e-05, -0.000241164, -0.001741, ..., -0.00208591, -0.00123939, -0.00141439], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0158653, 0.054091, 0.418744, ..., 0.586465, 0.295384, 0.334802]], dtype=float32)
+zxddebug vjps:
+array([-5.57587e-05, 0.000280932, 0.00169281, ..., 0.00209912, 0.00125169, 0.00139441], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0158659, 0.0541174, 0.432062, ..., 0.626687, 0.299857, 0.341395]], dtype=float32)
+zxddebug vjps:
+array([1.0675e-05, 2.91072e-05, -3.52718e-05, ..., 9.66787e-06, 9.00631e-06, -1.46243e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0216768, 0.0739379, 0.590304, ..., 0.856211, 0.409679, 0.466431]], dtype=float32)
+zxddebug vjps:
+array([1.0675e-05], dtype=float32) array([2.91072e-05], dtype=float32) array([-3.52718e-05], dtype=float32) array([1.18507e-05], dtype=float32) array([1.44863e-05], dtype=float32) array([4.26762e-05], dtype=float32) array([-5.3386e-05], dtype=float32) array([-3.71841e-05], dtype=float32) array([4.2827e-05], dtype=float32) array([-2.53435e-05], dtype=float32) array([1.27811e-06], dtype=float32) array([9.41185e-05], dtype=float32) array([-5.61435e-06], dtype=float32) array([-3.4865e-06], dtype=float32) array([-8.32959e-05], dtype=float32) array([-1.71861e-05], dtype=float32) array([2.21259e-05], dtype=float32) array([7.43039e-06], dtype=float32) array([-4.33401e-05], dtype=float32) array([-6.03753e-05], dtype=float32) array([-3.53085e-06], dtype=float32) array([-1.43235e-07], dtype=float32) array([4.28996e-05], dtype=float32) array([4.91421e-05], dtype=float32) array([5.21287e-05], dtype=float32) array([8.71226e-06], dtype=float32) array([2.3331e-05], dtype=float32) array([-2.87988e-05], dtype=float32) array([1.14162e-06], dtype=float32) array([-1.16642e-05], dtype=float32) array([-4.79922e-05], dtype=float32) array([-3.98995e-06], dtype=float32) array([2.67953e-05], dtype=float32) array([-5.39573e-05], dtype=float32) array([4.14223e-05], dtype=float32) array([-5.96524e-06], dtype=float32) array([3.67519e-06], dtype=float32) array([-4.36347e-05], dtype=float32) array([5.84654e-07], dtype=float32) array([2.58619e-05], dtype=float32) array([-6.5784e-06], dtype=float32) array([1.33359e-05], dtype=float32) array([-3.13803e-05], dtype=float32) array([-1.54534e-05], dtype=float32) array([2.05987e-05], dtype=float32) array([-2.50816e-05], dtype=float32) array([-2.5812e-05], dtype=float32) array([-6.59424e-07], dtype=float32) array([2.42042e-05], dtype=float32) array([-1.35114e-06], dtype=float32) array([-2.04084e-05], dtype=float32) array([1.20365e-06], dtype=float32) array([1.90496e-05], dtype=float32) array([9.38855e-06], dtype=float32) array([5.35984e-05], dtype=float32) array([-3.68419e-05], dtype=float32) array([-9.68932e-06], dtype=float32) array([1.06883e-05], dtype=float32) array([-1.34961e-05], dtype=float32) array([-2.87682e-05], dtype=float32) array([1.13788e-05], dtype=float32) array([1.55639e-05], dtype=float32) array([8.69236e-05], dtype=float32) array([-2.82556e-05], dtype=float32) array([-3.51343e-05], dtype=float32) array([-6.60758e-05], dtype=float32) array([-2.43393e-05], dtype=float32) array([3.16848e-05], dtype=float32) array([-1.53736e-05], dtype=float32) array([4.64212e-05], dtype=float32) array([-3.4886e-05], dtype=float32) array([4.16354e-05], dtype=float32) array([-1.50288e-05], dtype=float32) array([-2.5295e-05], dtype=float32) array([-3.15575e-05], dtype=float32) array([2.88124e-05], dtype=float32) array([6.44479e-06], dtype=float32) array([2.08266e-05], dtype=float32) array([-4.16045e-06], dtype=float32) array([-3.00866e-05], dtype=float32) array([2.23586e-05], dtype=float32) array([2.26224e-05], dtype=float32) array([3.66425e-05], dtype=float32) array([2.35501e-05], dtype=float32) array([1.0895e-05], dtype=float32) array([3.33966e-05], dtype=float32) array([3.21655e-05], dtype=float32) array([1.68954e-05], dtype=float32) array([-3.55062e-05], dtype=float32) array([2.93152e-05], dtype=float32) array([-6.7843e-05], dtype=float32) array([5.28119e-07], dtype=float32) array([9.27088e-06], dtype=float32) array([2.65851e-05], dtype=float32) array([-6.11791e-05], dtype=float32) array([-5.08204e-05], dtype=float32) array([-7.36589e-06], dtype=float32) array([1.27735e-05], dtype=float32) array([-3.17214e-05], dtype=float32) array([-5.44746e-05], dtype=float32) array([-8.31687e-06], dtype=float32) array([1.63632e-05], dtype=float32) array([-1.14646e-05], dtype=float32) array([8.47457e-07], dtype=float32) array([-3.64808e-05], dtype=float32) array([7.66467e-06], dtype=float32) array([3.83543e-05], dtype=float32) array([8.69905e-06], dtype=float32) array([4.43427e-06], dtype=float32) array([4.2281e-06], dtype=float32) array([-3.11946e-05], dtype=float32) array([-7.37868e-05], dtype=float32) array([-1.51196e-05], dtype=float32) array([-1.93595e-05], dtype=float32) array([1.03136e-06], dtype=float32) array([-2.58974e-05], dtype=float32) array([3.03827e-05], dtype=float32) array([5.81005e-05], dtype=float32) array([7.11865e-05], dtype=float32) array([-2.3705e-05], dtype=float32) array([-8.29678e-06], dtype=float32) array([3.41527e-05], dtype=float32) array([-9.61626e-05], dtype=float32) array([1.50964e-05], dtype=float32) array([-1.9266e-05], dtype=float32) array([1.51957e-05], dtype=float32) array([1.88817e-05], dtype=float32) array([1.30631e-05], dtype=float32) array([1.75126e-05], dtype=float32) array([-2.29517e-05], dtype=float32) array([2.81555e-05], dtype=float32) array([-2.47956e-05], dtype=float32) array([-2.24248e-05], dtype=float32) array([5.62431e-05], dtype=float32) array([8.29261e-06], dtype=float32) array([1.71283e-05], dtype=float32) array([1.98336e-05], dtype=float32) array([1.32686e-05], dtype=float32) array([-2.7499e-05], dtype=float32) array([-3.74012e-06], dtype=float32) array([-3.77159e-05], dtype=float32) array([8.66003e-06], dtype=float32) array([7.74269e-05], dtype=float32) array([2.98601e-05], dtype=float32) array([2.08798e-06], dtype=float32) array([1.34606e-05], dtype=float32) array([-7.47359e-07], dtype=float32) array([3.90721e-05], dtype=float32) array([6.7121e-05], dtype=float32) array([-6.51517e-06], dtype=float32) array([4.05609e-05], dtype=float32) array([-6.94096e-06], dtype=float32) array([-1.52296e-05], dtype=float32) array([-6.59067e-05], dtype=float32) array([7.75624e-05], dtype=float32) array([3.32848e-05], dtype=float32) array([-4.7287e-06], dtype=float32) array([9.66787e-06], dtype=float32) array([9.00631e-06], dtype=float32) array([-1.46243e-05], dtype=float32) 
+
+[[1.1452872058725916e-05], [2.901201332861092e-05], [-3.28197238559369e-05], [1.1041077414120082e-05], [1.3711495739698876e-05], [4.47236598120071e-05], [-5.1782924856524915e-05], [-3.7982812500558794e-05], [4.2967563786078244e-05], [-2.496559318387881e-05], [-1.0001551231653139e-07], [9.519284503767267e-05], [-5.7825532167044e-06], [-3.7958764096401865e-06], [-8.534397784387693e-05], [-1.745144254527986e-05], [2.2647511286777444e-05], [7.537837518611923e-06], [-4.407386222737841e-05], [-6.136302545201033e-05], [-3.909341558028245e-06], [-8.65223000801052e-07], [4.296066254028119e-05], [4.7214245569193736e-05], [5.206530477153137e-05], [7.7721597335767e-06], [2.353103263885714e-05], [-2.728052277234383e-05], [-5.60157161544339e-07], [-1.0273950465489179e-05], [-4.909035487798974e-05], [-5.414625320554478e-06], [2.7671287170960568e-05], [-5.458694795379415e-05], [4.037264079670422e-05], [-6.810928425693419e-06], [5.049253559263889e-06], [-4.537784116109833e-05], [-6.659002593778496e-08], [2.7231273634242825e-05], [-8.268751116702333e-06], [1.1654575246211607e-05], [-3.090850805165246e-05], [-1.605428769835271e-05], [2.1131490939296782e-05], [-2.312525612069294e-05], [-2.4399045287282206e-05], [-1.4750351056136424e-06], [2.5222580006811768e-05], [-8.85992449184414e-07], [-2.1066860426799394e-05], [2.338106526167394e-07], [1.8279835785506293e-05], [9.77241597865941e-06], [5.352202060748823e-05], [-3.4951626730617136e-05], [-8.724230610823724e-06], [1.0842883966688532e-05], [-1.3291548384586349e-05], [-2.979347664222587e-05], [1.1661561984510627e-05], [1.3955376743979286e-05], [8.724503277335316e-05], [-2.8550633942359127e-05], [-3.4485878131818026e-05], [-6.773530185455456e-05], [-2.3426055122399703e-05], [3.282909528934397e-05], [-1.3755973668594379e-05], [4.785884448210709e-05], [-3.4914901334559545e-05], [4.211429404676892e-05], [-1.4726151675859e-05], [-2.551365105318837e-05], [-3.1906933145364746e-05], [2.8057278541382402e-05], [5.9030799093307e-06], [2.143410711141769e-05], [-6.8957101575506385e-06], [-3.0114411856629886e-05], [2.298561594216153e-05], [2.019735620706342e-05], [3.7462534237420186e-05], [2.393133945588488e-05], [9.343820238427725e-06], [3.3486474421806633e-05], [3.222411760361865e-05], [1.8013815861195326e-05], [-3.5486988053889945e-05], [2.8944465157110244e-05], [-6.940478488104418e-05], [2.986539300309232e-07], [9.336577932117507e-06], [2.5101840947172605e-05], [-5.923845310462639e-05], [-4.8151534429052845e-05], [-6.698198376398068e-06], [1.3437125744530931e-05], [-3.198996637365781e-05], [-5.367181438487023e-05], [-9.319716809841339e-06], [1.2387023161863908e-05], [-1.2055648767272942e-05], [1.551871378069336e-06], [-3.79918456019368e-05], [7.089558494044468e-06], [3.865749022224918e-05], [9.497620339971036e-06], [5.30669331055833e-06], [3.6828587326454e-06], [-3.260943049099296e-05], [-7.39577371859923e-05], [-1.478801277698949e-05], [-2.139197022188455e-05], [2.285618393216282e-06], [-2.5188326617353596e-05], [3.102119444520213e-05], [6.0376914916560054e-05], [7.073066080920398e-05], [-2.4634815417812206e-05], [-6.108984962338582e-06], [3.308216400910169e-05], [-9.747629519551992e-05], [1.4909178389643785e-05], [-1.9570990843931213e-05], [1.4895225831423886e-05], [1.9580278603825718e-05], [1.3511022189049982e-05], [1.7616064724279568e-05], [-2.5041683329618536e-05], [2.696685078262817e-05], [-2.489478538336698e-05], [-2.1795685825054534e-05], [5.432987745734863e-05], [6.7481300902727526e-06], [1.7569755073054694e-05], [1.968838660104666e-05], [1.212168535857927e-05], [-2.691668487386778e-05], [-2.3357208647212246e-06], [-3.8455887988675386e-05], [9.133356797974557e-06], [7.612760964548215e-05], [2.95782410830725e-05], [2.2889416868565604e-06], [1.6188618246815167e-05], [-2.4433384737676533e-07], [3.81482022930868e-05], [6.696221680613235e-05], [-8.590837751398794e-06], [3.912187457899563e-05], [-6.307178864517482e-06], [-1.490883732913062e-05], [-6.68690845486708e-05], [7.742677553324029e-05], [3.3046544558601454e-05], [-3.934903816116275e-06], [1.1305904081382323e-05], [1.0773780559247825e-05], [-1.4303094758361112e-05]]
+Grad shape: (64, 1)
+Grad: [[-1.6313916830767994e-06], [-1.4656195617135381e-06], [7.811425166437402e-05], [4.071918374393135e-05], [5.7314020523335785e-05], [-5.949049864284461e-06], [1.5967738363542594e-05], [2.9221049771877006e-05], [4.5668872189708054e-05], [2.370209949731361e-05], [5.459828389575705e-05], [2.106553984049242e-05], [-6.099279926274903e-05], [6.639336788794026e-05], [1.3880377025543567e-07], [1.3180180758354254e-05], [9.587089152773842e-06], [-6.40576445221086e-06], [-3.8875004975125194e-05], [6.451436092902441e-06], [-5.812691597384401e-05], [-1.3824481357005425e-05], [-9.725295967655256e-06], [1.2233818779350258e-05], [2.3839314962970093e-05], [-6.549510089826072e-06], [-2.0911824321956374e-05], [-3.276842835475691e-05], [-5.14338280481752e-05], [1.9266937670181505e-05], [-1.062159935827367e-05], [-3.274030859756749e-06], [1.4187296983436681e-05], [-3.753385317395441e-05], [2.5055573132704012e-05], [4.1984181734733284e-05], [2.0834881070186384e-05], [8.707572305866051e-06], [-3.385193122085184e-05], [-9.157385647995397e-06], [-1.1144094060000498e-05], [-8.057086233748123e-05], [5.7063178246608004e-05], [-1.3122878954163752e-05], [-2.642392792040482e-05], [-4.490706851356663e-05], [5.251094262348488e-05], [-1.1920594289449582e-07], [2.520835005270783e-05], [4.816691216547042e-05], [2.560601569712162e-05], [-1.9894441720680334e-05], [6.759888947271975e-06], [-2.2047732272767462e-05], [-4.5756059989798814e-05], [-1.7322268831776455e-05], [1.2087772120139562e-05], [-4.4663884182227775e-05], [2.1713673049816862e-05], [-5.157553005119553e-06], [2.9457587515935302e-05], [9.277119534090161e-05], [1.3627083717437927e-05], [-1.3982285963720642e-05]]
+第 4 epoch
+Loss: array(0.498662, dtype=float32)
+Grad shape: (160, 1)
+Grad: zxddebug enter transforms.cpp value_and_grad
+zxddebug enter transforms.cpp vjp
+zxddebug cotans:array(1, dtype=float32)
+zxddebug cotans:1
+zxddebug outputs:1
+zxddebug out:array(0.498341, dtype=float32)
+zxddebug out.shape:()
+zxddebug cotan_index:0
+zxddebug cotans.shape:()
+zxddebug tape.size:0
+zxddebug tape.size:17
+zxddebug Run the tape backwards
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.498341, dtype=float32)
+zxddebug vjps:
+array(1, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8MultiplyE
+zxddebug cotangents.size:1
+zxddebug a:array(0.498341, dtype=float32)
+zxddebug vjps:
+array(0.00223214, dtype=float32)
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core7SqueezeE
+zxddebug cotangents.size:1
+zxddebug a:array(223.257, dtype=float32)
+zxddebug vjps:
+array([0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6ReduceE
+zxddebug cotangents.size:1
+zxddebug a:array([[223.257]], dtype=float32)
+zxddebug vjps:
+array([0.00223214, 0.00223214, 0.00223214, ..., 0.00223214, 0.00223214, 0.00223214], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6SquareE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.00264293, 0.000548331, 0.205588, ..., 0.925247, 0.96887, 0.788398]], dtype=float32)
+zxddebug vjps:
+array([-0.000229507, 0.000104538, 0.00202419, ..., 0.00429419, 0.00439425, 0.00396392], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core8SubtractE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0514095, 0.0234165, 0.453418, ..., 0.961897, 0.984312, 0.887918]], dtype=float32)
+zxddebug vjps:
+array([-0.000229507, 0.000104538, 0.00202419, ..., 0.00429419, 0.00439425, 0.00396392], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0547832, 0.0144865, 0.454602, ..., 0.935794, 0.996359, 0.89148]], dtype=float32)
+zxddebug vjps:
+array([-0.000229507, 0.000104538, 0.00202419, ..., 0.0036546, 0.00424313, 0.00416228], dtype=float32) 
+array([0.00230274, 0.00063114, 2.7963e-05, ..., 0.00429419, 0.00439425, 0.00396392], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.516129, 0.141136, -0.0174496, ..., 0.935794, 0.996359, 0.89148]], dtype=float32)
+zxddebug vjps:
+array([0.00230274, 0.00063114, 2.7963e-05, ..., -0.00147587, -0.000361424, -0.00203529], dtype=float32) 
+array([0.00382585, 0.00445831, 0.00444577, ..., 0.00429419, 0.00439425, 0.00396392], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.856511, 0.98999, 0.999848, ..., 0.935794, 0.996359, 0.89148]], dtype=float32)
+zxddebug vjps:
+array([-0.00197463, -0.000629228, 7.75768e-05, ..., 0.0015139, 0.000374664, 0.0017959], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.516129, 0.141136, -0.0174496, ..., -0.352547, -0.0852625, -0.453061]], dtype=float32)
+zxddebug vjps:
+array([0.00197232, 0.000624822, 2.79587e-05, ..., -0.00138111, -0.000360108, -0.00181442], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.542326, 0.141609, -0.0174504, ..., -0.360291, -0.0853661, -0.470196]], dtype=float32)
+zxddebug vjps:
+array([-1.69121e-06, -3.22453e-06, 7.72447e-05, ..., 9.71957e-05, 1.06543e-05, -1.35581e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.740952, 0.193473, -0.0238417, ..., -0.492247, -0.116631, -0.642405]], dtype=float32)
+zxddebug vjps:
+array([-1.69121e-06], dtype=float32) array([-3.22453e-06], dtype=float32) array([7.72447e-05], dtype=float32) array([4.38029e-05], dtype=float32) array([5.63827e-05], dtype=float32) array([-3.92996e-06], dtype=float32) array([1.04828e-05], dtype=float32) array([2.92816e-05], dtype=float32) array([4.4034e-05], dtype=float32) array([2.56044e-05], dtype=float32) array([5.34815e-05], dtype=float32) array([2.15111e-05], dtype=float32) array([-5.96947e-05], dtype=float32) array([6.86342e-05], dtype=float32) array([6.92911e-07], dtype=float32) array([1.1271e-05], dtype=float32) array([9.23927e-06], dtype=float32) array([-8.121e-06], dtype=float32) array([-3.92758e-05], dtype=float32) array([2.99442e-06], dtype=float32) array([-5.89716e-05], dtype=float32) array([-1.12256e-05], dtype=float32) array([-1.02134e-05], dtype=float32) array([1.06053e-05], dtype=float32) array([2.18168e-05], dtype=float32) array([-4.62492e-06], dtype=float32) array([-1.73819e-05], dtype=float32) array([-3.17197e-05], dtype=float32) array([-4.84684e-05], dtype=float32) array([2.22852e-05], dtype=float32) array([-9.5657e-06], dtype=float32) array([-5.87952e-06], dtype=float32) array([1.84445e-05], dtype=float32) array([-3.85126e-05], dtype=float32) array([2.45643e-05], dtype=float32) array([4.25004e-05], dtype=float32) array([2.08836e-05], dtype=float32) array([1.25165e-05], dtype=float32) array([-3.54755e-05], dtype=float32) array([-8.00299e-06], dtype=float32) array([-6.54116e-06], dtype=float32) array([-8.01016e-05], dtype=float32) array([5.70474e-05], dtype=float32) array([-1.34742e-05], dtype=float32) array([-2.10318e-05], dtype=float32) array([-4.74322e-05], dtype=float32) array([4.72079e-05], dtype=float32) array([-1.17672e-07], dtype=float32) array([2.03393e-05], dtype=float32) array([4.61719e-05], dtype=float32) array([2.28008e-05], dtype=float32) array([-2.04544e-05], dtype=float32) array([5.91088e-06], dtype=float32) array([-2.40062e-05], dtype=float32) array([-4.42351e-05], dtype=float32) array([-1.5473e-05], dtype=float32) array([1.24414e-05], dtype=float32) array([-4.29552e-05], dtype=float32) array([2.06609e-05], dtype=float32) array([-5.51935e-06], dtype=float32) array([3.12882e-05], dtype=float32) array([9.71957e-05], dtype=float32) array([1.06543e-05], dtype=float32) array([-1.35581e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core11ConcatenateE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0547832, 0.0144865, 0.454602, ..., 0.831892, 0.965968, 0.928339]], dtype=float32)
+zxddebug vjps:
+array([-0.000229507, 0.000104538, 0.00202419, ..., 0.00245084, 0.00114621, 0.00164468], dtype=float32) 
+array([0.00442765, 0.00446456, 0.00407994, ..., 0.0036546, 0.00424313, 0.00416228], dtype=float32) 
+
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3CosE
+zxddebug cotangents.size:1
+zxddebug a:array([[0.998498, 0.999895, 0.890695, ..., 0.831892, 0.965968, 0.928339]], dtype=float32)
+zxddebug vjps:
+array([0.000242561, -6.46756e-05, -0.00185475, ..., -0.00202807, -0.00109753, -0.00154726], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core3SinE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0547832, 0.0144865, 0.454602, ..., 0.554937, 0.258661, 0.371734]], dtype=float32)
+zxddebug vjps:
+array([-0.000229162, 0.000104527, 0.00180293, ..., 0.00203883, 0.0011072, 0.00152683], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core6MatmulE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.0548107, 0.014487, 0.471925, ..., 0.588288, 0.261636, 0.380876]], dtype=float32)
+zxddebug vjps:
+array([9.80733e-06, 2.91683e-05, -3.79243e-05, ..., 7.87526e-06, 7.07933e-06, -1.49568e-05], dtype=float32) 
+
+zxddebug enter the tape backwards
+Operator Name: N3mlx4core9TransposeE
+zxddebug cotangents.size:1
+zxddebug a:array([[-0.074885, 0.0197928, 0.644767, ..., 0.803747, 0.35746, 0.520372]], dtype=float32)
+zxddebug vjps:
+array([9.80733e-06], dtype=float32) array([2.91683e-05], dtype=float32) array([-3.79243e-05], dtype=float32) array([1.27282e-05], dtype=float32) array([1.53201e-05], dtype=float32) array([4.0368e-05], dtype=float32) array([-5.50709e-05], dtype=float32) array([-3.62512e-05], dtype=float32) array([4.26081e-05], dtype=float32) array([-2.57217e-05], dtype=float32) array([1.99717e-06], dtype=float32) array([9.27963e-05], dtype=float32) array([-5.42119e-06], dtype=float32) array([-3.14226e-06], dtype=float32) array([-8.09222e-05], dtype=float32) array([-1.68685e-05], dtype=float32) array([2.15196e-05], dtype=float32) array([7.30113e-06], dtype=float32) array([-4.24688e-05], dtype=float32) array([-5.91995e-05], dtype=float32) array([-3.11197e-06], dtype=float32) array([5.32891e-07], dtype=float32) array([4.27678e-05], dtype=float32) array([5.11922e-05], dtype=float32) array([5.21199e-05], dtype=float32) array([9.74063e-06], dtype=float32) array([2.30757e-05], dtype=float32) array([-3.04298e-05], dtype=float32) array([2.28238e-06], dtype=float32) array([-1.31854e-05], dtype=float32) array([-4.67142e-05], dtype=float32) array([-2.4649e-06], dtype=float32) array([2.57936e-05], dtype=float32) array([-5.31839e-05], dtype=float32) array([4.25159e-05], dtype=float32) array([-5.03545e-06], dtype=float32) array([2.20697e-06], dtype=float32) array([-4.16575e-05], dtype=float32) array([9.37969e-07], dtype=float32) array([2.43224e-05], dtype=float32) array([-4.74932e-06], dtype=float32) array([1.51757e-05], dtype=float32) array([-3.18527e-05], dtype=float32) array([-1.4771e-05], dtype=float32) array([1.99828e-05], dtype=float32) array([-2.72036e-05], dtype=float32) array([-2.73323e-05], dtype=float32) array([1.59254e-07], dtype=float32) array([2.30511e-05], dtype=float32) array([-9.7904e-07], dtype=float32) array([-1.9655e-05], dtype=float32) array([1.50239e-06], dtype=float32) array([1.98707e-05], dtype=float32) array([8.95331e-06], dtype=float32) array([5.36016e-05], dtype=float32) array([-3.88707e-05], dtype=float32) array([-1.07436e-05], dtype=float32) array([1.05027e-05], dtype=float32) array([-1.37017e-05], dtype=float32) array([-2.76003e-05], dtype=float32) array([1.10516e-05], dtype=float32) array([1.73189e-05], dtype=float32) array([8.64394e-05], dtype=float32) array([-2.78891e-05], dtype=float32) array([-3.57952e-05], dtype=float32) array([-6.41545e-05], dtype=float32) array([-2.53102e-05], dtype=float32) array([3.03813e-05], dtype=float32) array([-1.7139e-05], dtype=float32) array([4.47737e-05], dtype=float32) array([-3.48018e-05], dtype=float32) array([4.10464e-05], dtype=float32) array([-1.534e-05], dtype=float32) array([-2.50169e-05], dtype=float32) array([-3.11262e-05], dtype=float32) array([2.96009e-05], dtype=float32) array([7.0363e-06], dtype=float32) array([2.01285e-05], dtype=float32) array([-1.31518e-06], dtype=float32) array([-3.00109e-05], dtype=float32) array([2.16365e-05], dtype=float32) array([2.52674e-05], dtype=float32) array([3.5687e-05], dtype=float32) array([2.30961e-05], dtype=float32) array([1.2596e-05], dtype=float32) array([3.32477e-05], dtype=float32) array([3.20529e-05], dtype=float32) array([1.56452e-05], dtype=float32) array([-3.5474e-05], dtype=float32) array([2.96795e-05], dtype=float32) array([-6.60262e-05], dtype=float32) array([4.25188e-07], dtype=float32) array([9.18508e-06], dtype=float32) array([2.81813e-05], dtype=float32) array([-6.3224e-05], dtype=float32) array([-5.36858e-05], dtype=float32) array([-8.09493e-06], dtype=float32) array([1.20264e-05], dtype=float32) array([-3.13785e-05], dtype=float32) array([-5.52761e-05], dtype=float32) array([-7.21068e-06], dtype=float32) array([2.07157e-05], dtype=float32) array([-1.07992e-05], dtype=float32) array([1.23083e-07], dtype=float32) array([-3.47691e-05], dtype=float32) array([8.29039e-06], dtype=float32) array([3.7963e-05], dtype=float32) array([7.81323e-06], dtype=float32) array([3.48222e-06], dtype=float32) array([4.8295e-06], dtype=float32) array([-2.95963e-05], dtype=float32) array([-7.34877e-05], dtype=float32) array([-1.54627e-05], dtype=float32) array([-1.71127e-05], dtype=float32) array([-2.28443e-07], dtype=float32) array([-2.66396e-05], dtype=float32) array([2.96358e-05], dtype=float32) array([5.55167e-05], dtype=float32) array([7.15805e-05], dtype=float32) array([-2.26492e-05], dtype=float32) array([-1.0704e-05], dtype=float32) array([3.52809e-05], dtype=float32) array([-9.45748e-05], dtype=float32) array([1.52804e-05], dtype=float32) array([-1.89021e-05], dtype=float32) array([1.55042e-05], dtype=float32) array([1.80868e-05], dtype=float32) array([1.25517e-05], dtype=float32) array([1.73731e-05], dtype=float32) array([-2.06342e-05], dtype=float32) array([2.94237e-05], dtype=float32) array([-2.46495e-05], dtype=float32) array([-2.30845e-05], dtype=float32) array([5.82656e-05], dtype=float32) array([9.992e-06], dtype=float32) array([1.66179e-05], dtype=float32) array([1.99639e-05], dtype=float32) array([1.45171e-05], dtype=float32) array([-2.8099e-05], dtype=float32) array([-5.33828e-06], dtype=float32) array([-3.68467e-05], dtype=float32) array([8.12782e-06], dtype=float32) array([7.87393e-05], dtype=float32) array([3.01253e-05], dtype=float32) array([1.86422e-06], dtype=float32) array([1.049e-05], dtype=float32) array([-8.15185e-07], dtype=float32) array([4.00307e-05], dtype=float32) array([6.71945e-05], dtype=float32) array([-4.28519e-06], dtype=float32) array([4.20854e-05], dtype=float32) array([-7.63361e-06], dtype=float32) array([-1.55601e-05], dtype=float32) array([-6.47503e-05], dtype=float32) array([7.75947e-05], dtype=float32) array([3.34968e-05], dtype=float32) array([-5.606e-06], dtype=float32) array([7.87526e-06], dtype=float32) array([7.07933e-06], dtype=float32) array([-1.49568e-05], dtype=float32) 
+
+[[1.0674994882720057e-05], [2.9107211958034895e-05], [-3.527183798723854e-05], [1.1850724149553571e-05], [1.4486291547655128e-05], [4.2676154407672584e-05], [-5.3386029321700335e-05], [-3.718413790920749e-05], [4.282697045709938e-05], [-2.5343490051454864e-05], [1.278108811675338e-06], [9.411854261998087e-05], [-5.6143530855479185e-06], [-3.486497007543221e-06], [-8.329588308697566e-05], [-1.7186106560984626e-05], [2.2125866962596774e-05], [7.43039026929182e-06], [-4.334005279815756e-05], [-6.03752960159909e-05], [-3.530847607180476e-06], [-1.4323458685794321e-07], [4.28995699621737e-05], [4.914211967843585e-05], [5.2128700190223753e-05], [8.712258932064287e-06], [2.3330963813350536e-05], [-2.879875864891801e-05], [1.1416162806199281e-06], [-1.1664204066619277e-05], [-4.7992194595281035e-05], [-3.9899482544569764e-06], [2.6795263693202287e-05], [-5.395726111601107e-05], [4.142227771808393e-05], [-5.96523932472337e-06], [3.6751898733200505e-06], [-4.363465995993465e-05], [5.846544581800117e-07], [2.5861896574497223e-05], [-6.57839564155438e-06], [1.3335856237972621e-05], [-3.138030297122896e-05], [-1.545340273878537e-05], [2.0598685296135955e-05], [-2.5081602871068753e-05], [-2.5812048988882452e-05], [-6.59424472360115e-07], [2.4204175133490935e-05], [-1.3511427141565946e-06], [-2.040837352978997e-05], [1.2036476846333244e-06], [1.9049604816245846e-05], [9.388554644829128e-06], [5.3598367230733857e-05], [-3.684188050101511e-05], [-9.689317266747821e-06], [1.0688317161111627e-05], [-1.3496131941792555e-05], [-2.876816870411858e-05], [1.1378841918485705e-05], [1.556388451717794e-05], [8.692362462170422e-05], [-2.8255642973817885e-05], [-3.513431147439405e-05], [-6.6075794165954e-05], [-2.433931513223797e-05], [3.1684750865679234e-05], [-1.5373561836895533e-05], [4.6421213482972234e-05], [-3.488597212708555e-05], [4.163542325841263e-05], [-1.502881059423089e-05], [-2.5295006707892753e-05], [-3.155753802275285e-05], [2.8812391974497586e-05], [6.444789505621884e-06], [2.082661558233667e-05], [-4.160449407208944e-06], [-3.0086592232692055e-05], [2.2358570276992396e-05], [2.2622374672209844e-05], [3.6642493796534836e-05], [2.3550119294668548e-05], [1.0895031664404087e-05], [3.339662362122908e-05], [3.2165495213121176e-05], [1.689537566562649e-05], [-3.550624387571588e-05], [2.9315246138139628e-05], [-6.784296419937164e-05], [5.281189601191727e-07], [9.270882401324343e-06], [2.65850976575166e-05], [-6.117914745118469e-05], [-5.0820417527575046e-05], [-7.365887995547382e-06], [1.277352657780284e-05], [-3.172139258822426e-05], [-5.447464718599804e-05], [-8.316872481373139e-06], [1.6363166650990024e-05], [-1.1464603630884085e-05], [8.474571018268762e-07], [-3.6480767448665574e-05], [7.664669283258263e-06], [3.835431925836019e-05], [8.699051250005141e-06], [4.434265065356158e-06], [4.2281044443370774e-06], [-3.1194635084830225e-05], [-7.37868103897199e-05], [-1.5119557247089688e-05], [-1.9359506040927954e-05], [1.0313572147424566e-06], [-2.5897426894516684e-05], [3.0382689146790653e-05], [5.8100500609725714e-05], [7.118650682969019e-05], [-2.3705026251263916e-05], [-8.29678447189508e-06], [3.4152715670643374e-05], [-9.616264287615195e-05], [1.5096423339855392e-05], [-1.9265989976702258e-05], [1.5195669220702257e-05], [1.888165934360586e-05], [1.3063062397122849e-05], [1.7512622434878722e-05], [-2.2951744540478103e-05], [2.8155523978057317e-05], [-2.4795603167149238e-05], [-2.2424776034313254e-05], [5.6243050494231284e-05], [8.292609891213942e-06], [1.7128291801782325e-05], [1.9833560145343654e-05], [1.3268584552861284e-05], [-2.749899613263551e-05], [-3.7401184727059444e-06], [-3.771594128920697e-05], [8.660026651341468e-06], [7.742686284473166e-05], [2.986010986205656e-05], [2.087978600684437e-06], [1.3460557966027409e-05], [-7.473590812878683e-07], [3.907211430487223e-05], [6.712104368489236e-05], [-6.515171662613284e-06], [4.0560866182204336e-05], [-6.940955699974438e-06], [-1.5229560631269123e-05], [-6.590665725525469e-05], [7.756242848699912e-05], [3.3284788514720276e-05], [-4.728701242129318e-06], [9.667865924711805e-06], [9.0063113020733e-06], [-1.462432828702731e-05]]
+Grad shape: (64, 1)
+Grad: [[-1.660618067944597e-06], [-2.2831475234852405e-06], [7.775584526825696e-05], [4.221645576762967e-05], [5.691115802619606e-05], [-4.983814051229274e-06], [1.3343034879653715e-05], [2.9270640879985876e-05], [4.4921969674760476e-05], [2.4624474463053048e-05], [5.410492667579092e-05], [2.1292618839652278e-05], [-6.041764572728425e-05], [6.75087358104065e-05], [5.795845936518162e-07], [1.2277445421204902e-05], [9.428005796507932e-06], [-7.223931334010558e-06], [-3.909381848643534e-05], [4.782296855410095e-06], [-5.8571189583744854e-05], [-1.2591351151058916e-05], [-9.96430480881827e-06], [1.1464901945146266e-05], [2.2891119442647323e-05], [-5.631309250020422e-06], [-1.923919262480922e-05], [-3.2291773095494136e-05], [-5.0056016334565356e-05], [2.071619928756263e-05], [-1.0125177141162567e-05], [-4.508353413257282e-06], [1.6220699762925506e-05], [-3.8027206755941734e-05], [2.4839144316501915e-05], [4.226016972097568e-05], [2.0872883396805264e-05], [1.0523013770580292e-05], [-3.464947803877294e-05], [-8.612863894086331e-06], [-8.934395737014711e-06], [-8.040513057494536e-05], [5.709649485652335e-05], [-1.3299600141181145e-05], [-2.3862236048444174e-05], [-4.614190402207896e-05], [5.0016566092381254e-05], [-1.8064088180835824e-07], [2.2896743757883087e-05], [4.72500323667191e-05], [2.4284950995934196e-05], [-2.0175200916128233e-05], [6.359496637742268e-06], [-2.2995585823082365e-05], [-4.506355253397487e-05], [-1.6451869669253938e-05], [1.2264493307156954e-05], [-4.3880994780920446e-05], [2.122713704011403e-05], [-5.33308138983557e-06], [3.0350311135407537e-05], [9.494578989688307e-05], [1.2213890840939712e-05], [-1.379005698254332e-05]]
+第 5 epoch
+Loss: array(0.498341, dtype=float32)
+Grad shape: (160, 1)
+Grad: [[9.807330570765771e-06], [2.916832090704702e-05], [-3.792427742155269e-05], [1.2728195542877074e-05], [1.5320136299123988e-05], [4.0368042391492054e-05], [-5.5070930102374405e-05], [-3.6251240089768544e-05], [4.260807327227667e-05], [-2.5721728889038786e-05], [1.9971682831965154e-06], [9.279629011871293e-05], [-5.421186415333068e-06], [-3.1422566735272994e-06], [-8.09222474345006e-05], [-1.686853647697717e-05], [2.151961234631017e-05], [7.301129699044395e-06], [-4.246884418535046e-05], [-5.919951217947528e-05], [-3.1119652703637257e-06], [5.328906240720244e-07], [4.276783874956891e-05], [5.11921571160201e-05], [5.211992174736224e-05], [9.740633686305955e-06], [2.3075679564499296e-05], [-3.042981006728951e-05], [2.2823805920779705e-06], [-1.318542126682587e-05], [-4.671424539992586e-05], [-2.4648959424666828e-06], [2.5793644454097375e-05], [-5.318391413311474e-05], [4.251587961334735e-05], [-5.035450158175081e-06], [2.2069714304961963e-06], [-4.165749123785645e-05], [9.379692755828728e-07], [2.4322444005520083e-05], [-4.749321760755265e-06], [1.5175687622104306e-05], [-3.185269815730862e-05], [-1.477097157476237e-05], [1.9982800949946977e-05], [-2.7203623176319525e-05], [-2.733232940954622e-05], [1.5925368757052638e-07], [2.3051055904943496e-05], [-9.790395552045084e-07], [-1.965500632650219e-05], [1.5023867945274105e-06], [1.987066752917599e-05], [8.953312317316886e-06], [5.360160503187217e-05], [-3.887067941832356e-05], [-1.07435525933397e-05], [1.0502733857720159e-05], [-1.3701696843781974e-05], [-2.7600308385444805e-05], [1.105164392356528e-05], [1.731886004563421e-05], [8.643943147035316e-05], [-2.788907841022592e-05], [-3.579518306651153e-05], [-6.415452662622556e-05], [-2.531017344153952e-05], [3.0381326723727398e-05], [-1.713898564048577e-05], [4.477371840039268e-05], [-3.480178929748945e-05], [4.1046379919862375e-05], [-1.533999056846369e-05], [-2.5016888685058802e-05], [-3.1126171961659566e-05], [2.960090569104068e-05], [7.036303486529505e-06], [2.012850745813921e-05], [-1.3151849316273e-06], [-3.0010884074727073e-05], [2.163651879527606e-05], [2.5267399905715138e-05], [3.5686971386894584e-05], [2.309608862560708e-05], [1.2596037777257152e-05], [3.324768113088794e-05], [3.2052852475317195e-05], [1.564520425745286e-05], [-3.54740368493367e-05], [2.9679467843379825e-05], [-6.602617941098288e-05], [4.2518774989730446e-07], [9.18507794267498e-06], [2.8181340894661844e-05], [-6.322396802715957e-05], [-5.368579149944708e-05], [-8.09492757980479e-06], [1.202642306452617e-05], [-3.1378516723634675e-05], [-5.527611210709438e-05], [-7.210681360447779e-06], [2.071567541861441e-05], [-1.0799172741826624e-05], [1.2308291275076044e-07], [-3.4769109333865345e-05], [8.290394362120423e-06], [3.7963047361699864e-05], [7.81322978582466e-06], [3.4822153338609496e-06], [4.829502358916216e-06], [-2.9596305466839112e-05], [-7.348765211645514e-05], [-1.5462688679690473e-05], [-1.711274126137141e-05], [-2.284425590914907e-07], [-2.6639589123078622e-05], [2.963584120152518e-05], [5.5516738939331844e-05], [7.158048538258299e-05], [-2.2649213860859163e-05], [-1.0703995030780789e-05], [3.528087108861655e-05], [-9.457478881813586e-05], [1.5280387742677703e-05], [-1.8902066585724242e-05], [1.550422894069925e-05], [1.8086839190800674e-05], [1.255172992387088e-05], [1.7373051377944648e-05], [-2.0634173779399134e-05], [2.9423721571220085e-05], [-2.4649451006553136e-05], [-2.308454168087337e-05], [5.8265632105758414e-05], [9.991997103497852e-06], [1.6617939763818868e-05], [1.996392893488519e-05], [1.451705156796379e-05], [-2.8099031624151394e-05], [-5.338279152056202e-06], [-3.684673720272258e-05], [8.127817636705004e-06], [7.87393146310933e-05], [3.0125276680337265e-05], [1.8642224404175067e-06], [1.0489952728676144e-05], [-8.151845918291656e-07], [4.003070353064686e-05], [6.719448720104992e-05], [-4.285193881514715e-06], [4.208540849504061e-05], [-7.63361094868742e-06], [-1.556008282932453e-05], [-6.475029658759013e-05], [7.759471918689087e-05], [3.349678445374593e-05], [-5.60600255994359e-06], [7.875260962464381e-06], [7.079333499859786e-06], [-1.4956809536670335e-05]]
+Grad shape: (64, 1)
+Grad: [[-1.6912076716835145e-06], [-3.2245250167761697e-06], [7.724468741798773e-05], [4.380285827210173e-05], [5.6382676120847464e-05], [-3.929961621906841e-06], [1.048277408699505e-05], [2.9281633032951504e-05], [4.403397906571627e-05], [2.5604418624425307e-05], [5.348150443751365e-05], [2.151109219994396e-05], [-5.969473932054825e-05], [6.863416638225317e-05], [6.929111577846925e-07], [1.1270968570897821e-05], [9.23927018448012e-06], [-8.121000973915216e-06], [-3.927580110030249e-05], [2.9944210382382153e-06], [-5.897162191104144e-05], [-1.1225638445466757e-05], [-1.021336720441468e-05], [1.0605323950585444e-05], [2.181681884394493e-05], [-4.624917892215308e-06], [-1.7381913494318724e-05], [-3.1719686376163736e-05], [-4.846842057304457e-05], [2.2285206796368584e-05], [-9.56570147536695e-06], [-5.879519903828623e-06], [1.8444457964506e-05], [-3.851263682008721e-05], [2.4564264094806276e-05], [4.250037090969272e-05], [2.0883620891254395e-05], [1.2516453352873214e-05], [-3.547548476490192e-05], [-8.002987669897266e-06], [-6.541160018969094e-06], [-8.010162127902731e-05], [5.7047414884436876e-05], [-1.3474191291606985e-05], [-2.103175393131096e-05], [-4.743220779346302e-05], [4.7207940951921046e-05], [-1.1767220087222086e-07], [2.0339311959105544e-05], [4.6171895519364625e-05], [2.2800799342803657e-05], [-2.0454428522498347e-05], [5.910876552661648e-06], [-2.4006150852073915e-05], [-4.423511927598156e-05], [-1.5473000530619174e-05], [1.244138547917828e-05], [-4.295520921004936e-05], [2.066092929453589e-05], [-5.519345904758666e-06], [3.12881929858122e-05], [9.719570516608655e-05], [1.0654340258042794e-05], [-1.3558121281675994e-05]]
+Model parameters have been updated after backpropagation.

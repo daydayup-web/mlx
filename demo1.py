@@ -17,7 +17,7 @@ class SimpleNet(nn.Module):
         sin1 = mx.sin(out1)
         cos1 = mx.cos(out1)
         sin2 = mx.sin(out2)
-        cos2 = mx.sin(out2)
+        cos2 = mx.cos(out2)
         concat_out1 = mx.concatenate([sin1, cos1], 1)
         concat_out2 = mx.concatenate([sin2, cos2], 1)
         out = mx.concatenate([concat_out1, concat_out2], 1)
@@ -27,7 +27,7 @@ input_size1 = 1
 input_size2 = 1
 output_size1 = 160
 output_size2 = 64
-epoch = 100
+epoch = 5
 
 model = SimpleNet(input_size1, input_size2, output_size1, output_size2)
 
